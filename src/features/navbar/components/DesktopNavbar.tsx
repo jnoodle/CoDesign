@@ -69,10 +69,10 @@ export const DesktopNavbar = ({ onLoginOpen, onSearchOpen }: Props) => {
               }}
             >
               <Image
-                h={5}
+                h={8}
                 cursor="pointer"
                 objectFit={'contain'}
-                alt={'Superteam Earn'}
+                alt={'CoDesign'}
                 src={'/assets/logo/logo.svg'}
               />
 

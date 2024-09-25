@@ -109,8 +109,8 @@ export default function NewProfilePage({
     <Default
       meta={
         <Meta
-          title="Make Your Profile | Earn on Superteam | Connect with Crypto Talent"
-          description="Join Superteam to engage with top talent and discover bounties and grants for your crypto projects."
+          title="Make Your Profile | Earn on CoDesign | Connect with Crypto Talent"
+          description="Join CoDesign to engage with top talent and discover bounties and grants for your crypto projects."
           canonical="https://earn.superteam.fun/new/"
         />
       }
@@ -185,7 +185,7 @@ export default function NewProfilePage({
                   </Box>
                   <Box flexDir={'column'} gap={5} display={'flex'} px={4}>
                     <BulletPoint type="TALENT">
-                      Contribute to top Solana projects
+                      Contribute to top Web3 projects
                     </BulletPoint>
                     <BulletPoint type="TALENT">
                       Build your web3 resume
@@ -202,24 +202,24 @@ export default function NewProfilePage({
                   </Box>
                 </Flex>
               </AuthWrapper>
-              <Flex align="center" gap={6} mx="auto" mt={-3}>
-                <AvatarGroup max={3} size={'xs'}>
-                  {avatars.map((avatar, index) => (
-                    <Avatar
-                      key={index}
-                      pos="relative"
-                      borderWidth={'0px'}
-                      name={avatar.name}
-                      src={avatar.src}
-                    />
-                  ))}
-                </AvatarGroup>
-                {totals?.totalUsers !== null && (
-                  <Text pos="relative" color="brand.slate.500" fontSize="sm">
-                    Join {totals?.totalUsers?.toLocaleString()}+ others
-                  </Text>
-                )}
-              </Flex>
+              {/*<Flex align="center" gap={6} mx="auto" mt={-3}>*/}
+              {/*  <AvatarGroup max={3} size={'xs'}>*/}
+              {/*    {avatars.map((avatar, index) => (*/}
+              {/*      <Avatar*/}
+              {/*        key={index}*/}
+              {/*        pos="relative"*/}
+              {/*        borderWidth={'0px'}*/}
+              {/*        name={avatar.name}*/}
+              {/*        src={avatar.src}*/}
+              {/*      />*/}
+              {/*    ))}*/}
+              {/*  </AvatarGroup>*/}
+              {/*  {totals?.totalUsers !== null && (*/}
+              {/*    <Text pos="relative" color="brand.slate.500" fontSize="sm">*/}
+              {/*      Join {totals?.totalUsers?.toLocaleString()}+ others*/}
+              {/*    </Text>*/}
+              {/*  )}*/}
+              {/*</Flex>*/}
             </Flex>
           )}
           <Flex direction={'column'} gap={9} w="full">
@@ -291,38 +291,38 @@ export default function NewProfilePage({
                 </Box>
               </Flex>
             </AuthWrapper>
-            <Flex align="center" justify="space-between" gap={3} mt={-3} px={3}>
-              <Image
-                as={NextImage}
-                h={'20px'}
-                objectFit={'contain'}
-                alt="Jupiter Icon"
-                src={Jupiter as unknown as string}
-              />
-              <Image
-                as={NextImage}
-                h={'34px'}
-                objectFit={'contain'}
-                alt="Solflare Icon"
-                src={Solflare as unknown as string}
-              />
-              <Image
-                as={NextImage}
-                display={{ base: 'none', md: 'block' }}
-                h={'18px'}
-                objectFit={'contain'}
-                alt="Squads Icon"
-                src={Squads as unknown as string}
-              />
-              <Image
-                as={NextImage}
-                w={'28px'}
-                h={'28px'}
-                objectFit={'contain'}
-                alt="Tensor Icon"
-                src={Tensor as unknown as string}
-              />
-            </Flex>
+            {/*<Flex align="center" justify="space-between" gap={3} mt={-3} px={3}>*/}
+            {/*  <Image*/}
+            {/*    as={NextImage}*/}
+            {/*    h={'20px'}*/}
+            {/*    objectFit={'contain'}*/}
+            {/*    alt="Jupiter Icon"*/}
+            {/*    src={Jupiter as unknown as string}*/}
+            {/*  />*/}
+            {/*  <Image*/}
+            {/*    as={NextImage}*/}
+            {/*    h={'34px'}*/}
+            {/*    objectFit={'contain'}*/}
+            {/*    alt="Solflare Icon"*/}
+            {/*    src={Solflare as unknown as string}*/}
+            {/*  />*/}
+            {/*  <Image*/}
+            {/*    as={NextImage}*/}
+            {/*    display={{ base: 'none', md: 'block' }}*/}
+            {/*    h={'18px'}*/}
+            {/*    objectFit={'contain'}*/}
+            {/*    alt="Squads Icon"*/}
+            {/*    src={Squads as unknown as string}*/}
+            {/*  />*/}
+            {/*  <Image*/}
+            {/*    as={NextImage}*/}
+            {/*    w={'28px'}*/}
+            {/*    h={'28px'}*/}
+            {/*    objectFit={'contain'}*/}
+            {/*    alt="Tensor Icon"*/}
+            {/*    src={Tensor as unknown as string}*/}
+            {/*  />*/}
+            {/*</Flex>*/}
           </Flex>
         </Flex>
       </Box>

@@ -160,7 +160,7 @@ export const Feed = ({ isWinner = false }: { isWinner?: boolean }) => {
                   color="brand.slate.600"
                   fontSize={{ base: 'sm', lg: 'md' }}
                 >
-                  Discover the best work on Earn
+                  Discover the best work on CoDesign
                 </Text>
                 <Box
                   display={{ base: 'flex', md: 'none' }}

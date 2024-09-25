@@ -201,8 +201,8 @@ export default function TalentOlympics({ countryLeaders, rankings }: Props) {
       className="bg-white"
       meta={
         <Meta
-          title="Talent Olympics | Superteam Earn"
-          description="Explore the latest bounties on Superteam Earn, offering opportunities in the crypto space across Design, Development, and Content."
+          title="Talent Olympics | CoDesign"
+          description="Explore the latest bounties on CoDesign, offering opportunities in the crypto space across Design, Development, and Content."
           canonical="https://earn.superteam.fun"
         />
       }
@@ -318,7 +318,7 @@ function Hero({
         fontWeight={500}
         textAlign={'center'}
       >
-        Complete Challenges. Earn Prizes. <br /> Get a Full-Time Job.
+        Complete Challenges. CoDesign Prizes. <br /> Get a Full-Time Job.
       </Text>
       <Flex
         align="center"
@@ -335,7 +335,7 @@ function Hero({
             px={6}
             color="white"
             fontSize={'sm'}
-            bg="#6366F1"
+            bg="#A259FF"
             _active={{ bg: '#6366D1' }}
             href="https://discord.gg/5agsprjsj4"
             rounded="full"
@@ -390,7 +390,7 @@ function Hero({
           as={NextImage}
           w={{ base: '5rem', sm: '7rem' }}
           h={PoweredByHeight}
-          alt="Superteam"
+          alt="CoDesign"
           src={Superteam}
         />
         <Image

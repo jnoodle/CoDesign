@@ -16,13 +16,13 @@ export const exclusiveSponsorData: Record<
   pyth: {
     title: 'Pyth Network',
     description:
-      'Explore the latest Research and Developer bounties for the Pyth Network ecosystem on Superteam Earn. Get started now!',
+      'Explore the latest Research and Developer bounties for the Pyth Network ecosystem on CoDesign. Get started now!',
     bgImage: '/assets/category_assets/bg/content.png',
   },
   dreader: {
     title: 'dReader',
     description:
-      'Explore latest artist and developer bounties for dReader on Superteam Earn. Get started now!',
+      'Explore latest artist and developer bounties for dReader on CoDesign. Get started now!',
     bgImage: '/assets/category_assets/bg/content.png',
   },
   ns: {

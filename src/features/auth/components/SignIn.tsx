@@ -133,10 +133,10 @@ export const SignIn = ({ loginStep, setLoginStep }: SigninProps) => {
             <Text as="u">
               <Link
                 as={NextLink}
-                href={'mailto:support@superteamearn.com'}
+                href={'mailto:codesign.top@proton.me'}
                 isExternal
               >
-                support@superteamearn.com
+                codesign.top@proton.me
               </Link>
             </Text>
           </Text>

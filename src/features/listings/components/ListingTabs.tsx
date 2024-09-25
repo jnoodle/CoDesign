@@ -318,7 +318,7 @@ export const ListingTabs = ({
                       bottom: '-13px',
                       left: 0,
                       height: '2px',
-                      backgroundColor: '#6366f1',
+                      backgroundColor: '#A259FF',
                     },
                   }),
                 }}

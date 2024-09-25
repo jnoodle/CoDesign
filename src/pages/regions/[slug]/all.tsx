@@ -28,8 +28,8 @@ export default function AllRegionListingsPage({
   return (
     <Home type="region" st={st}>
       <Meta
-        title={`Welcome to Superteam Earn ${displayName} | Discover Bounties and Grants`}
-        description={`Welcome to Superteam ${displayName}'s page — Discover bounties and grants and become a part of the global crypto community`}
+        title={`Welcome to CoDesign ${displayName} | Discover Bounties and Grants`}
+        description={`Welcome to CoDesign ${displayName}'s page — Discover bounties and grants and become a part of the global crypto community`}
         canonical={`https://earn.superteam.fun/regions/${slug}/`}
         og={ogImage.toString()}
       />

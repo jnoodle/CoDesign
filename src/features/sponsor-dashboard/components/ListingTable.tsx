@@ -322,7 +322,7 @@ export const ListingTable = ({ listings }: ListingTableProps) => {
                     {listing.status === 'OPEN' && !!listing.isPublished && (
                       <Button
                         className="ph-no-capture"
-                        color="#6366F1"
+                        color="#A259FF"
                         fontSize={'13px'}
                         fontWeight={500}
                         _hover={{ bg: '#E0E7FF' }}

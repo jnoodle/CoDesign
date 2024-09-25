@@ -10,12 +10,12 @@ const config: ThemeConfig = {
 const theme = extendTheme({
   colors: {
     brand: {
-      purple: '#6366F1',
-      'purple.light': '#7471ff',
-      'purple.dark': '#4F46E5',
-      'purple.50': '#EEF2FF',
-      'purple.300': '#A5B4FC',
-      'purple.400': '#818CF8',
+      purple: '#A259FF',
+      'purple.light': '#B68CED',
+      'purple.dark': '#6E18DC',
+      'purple.50': '#EEE1FF',
+      'purple.300': '#A570E9',
+      'purple.400': '#8149C9',
       slate: {
         100: '#f1f5f9',
         200: '#e2e8f0',

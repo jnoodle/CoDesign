@@ -73,7 +73,7 @@ export const UserStatsBanner = () => {
             Welcome back, {user.firstName}
           </Text>
           <Text color="#c4c2ef" fontSize={'sm'}>
-            We’re so glad to have you on Earn
+            We’re so glad to have you on CoDesign
           </Text>
         </VStack>
       </Flex>

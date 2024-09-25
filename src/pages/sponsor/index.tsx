@@ -65,8 +65,8 @@ const Sponsor = () => {
   return (
     <>
       <Meta
-        title="Find Top Talent for Your Crypto Projects on Superteam Earn"
-        description="Seeking top talent for your crypto project? Superteam Earn connects you with experts for Bounties, Projects, and Grants in the crypto space."
+        title="Find Top Talent for Your Crypto Projects on CoDesign"
+        description="Seeking top talent for your crypto project? CoDesign connects you with experts for Bounties, Projects, and Grants in the crypto space."
         og={`${router.basePath}/assets/og/sponsor.png`}
       />
 

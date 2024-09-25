@@ -330,11 +330,11 @@ export const GrantApplicationModal = ({ isOpen, onClose, grant }: Props) => {
                 </FormControl>
                 <TextInputWithHelper
                   id="walletAddress"
-                  label="Your Solana Wallet Address"
+                  label="Your Web3 Wallet Address"
                   helperText={
-                    'Where should we send the funds? No .sol domains please!'
+                    'Where should we send the funds? No domains please!'
                   }
-                  placeholder="Add your Solana wallet address"
+                  placeholder="Add your Web3 wallet address"
                   register={register}
                   errors={errors}
                   validate={(address: string) =>
@@ -544,7 +544,7 @@ export const GrantApplicationModal = ({ isOpen, onClose, grant }: Props) => {
             {!!error && (
               <Text align="center" mb={2} color="red">
                 Sorry! An error occurred while submitting. <br />
-                Please try again or contact us at hello@superteamearn.com
+                Please try again or contact us at codesign.top@proton.me
               </Text>
             )}
             <Flex gap={2} mt={8}>

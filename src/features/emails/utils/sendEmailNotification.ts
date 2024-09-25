@@ -20,7 +20,7 @@ type EmailType =
   | 'grantApproved'
   | 'grantRejected'
   | 'grantPaymentReceived'
-  | 'superteamWinners'
+  | 'coDesignWinners'
   | 'commentReply'
   | 'commentTag'
   | 'scoutInvite';

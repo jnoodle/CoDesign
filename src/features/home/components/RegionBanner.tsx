@@ -47,10 +47,10 @@ export function RegionBanner({ st }: { st: (typeof Superteams)[0] }) {
               fontSize={{ base: 'sm', md: 'lg' }}
               fontWeight="medium"
             >
-              Welcome to Superteam {st.displayValue}
+              Welcome to CoDesign {st.displayValue}
               {`'s`} earnings page — use these opportunities to earn in global
-              standards and gain membership in the most exclusive Solana
-              community of {st.displayValue}!
+              standards and gain membership in the most exclusive Web3 community
+              of {st.displayValue}!
             </Text>
           </>
         )}

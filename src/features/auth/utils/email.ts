@@ -1,11 +1,14 @@
-import axios from 'axios';
+// import axios from 'axios';
 
 import { emailRegex } from '@/features/talent';
 
 export const checkEmailValidity = async (email: string) => {
   try {
-    const { data } = await axios.post('/api/email/validate', { email });
-    return data.isValid;
+    // CO: disable email validate
+    // const { data } = await axios.post('/api/email/validate', { email });
+    // return data.isValid;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
   } catch (error) {
     console.error('Error checking email validity:', error);
     return false;

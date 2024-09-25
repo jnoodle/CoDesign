@@ -84,7 +84,7 @@ export const SubmissionHeader = ({
   const socialListingLink = (medium?: 'twitter' | 'telegram') =>
     `${listingLink}${medium ? `?utm_source=superteamearn&utm_medium=${medium}&utm_campaign=sharelisting/` : ``}`;
 
-  const tweetShareContent = `Check out my newly added @SuperteamEarn opportunity!
+  const tweetShareContent = `Check out my newly added @CoDesignTop opportunity!
 
 ${socialListingLink('twitter')}
 `;
@@ -161,7 +161,7 @@ ${socialListingLink('twitter')}
         <Flex align="center" gap={2}>
           <Button
             color="brand.slate.400"
-            _hover={{ bg: '#E0E7FF', color: '#6366F1' }}
+            _hover={{ bg: '#E0E7FF', color: '#A259FF' }}
             isLoading={exportMutation.isPending}
             leftIcon={<DownloadIcon />}
             loadingText={'Exporting...'}
@@ -172,7 +172,7 @@ ${socialListingLink('twitter')}
           </Button>
           <Button
             color={'brand.slate.400'}
-            _hover={{ bg: '#E0E7FF', color: '#6366F1' }}
+            _hover={{ bg: '#E0E7FF', color: '#A259FF' }}
             leftIcon={<ExternalLinkIcon />}
             onClick={() =>
               window.open(`${router.basePath}/${listingPath}`, '_blank')
@@ -197,7 +197,7 @@ ${socialListingLink('twitter')}
             >
               <Button
                 color={'brand.slate.400'}
-                _hover={{ bg: '#E0E7FF', color: '#6366F1' }}
+                _hover={{ bg: '#E0E7FF', color: '#A259FF' }}
                 leftIcon={<LuPencil />}
                 variant={'ghost'}
               >

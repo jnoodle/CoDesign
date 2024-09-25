@@ -470,7 +470,7 @@ export const ListingBasic = ({
               <ListingFormLabel htmlFor="region">
                 Listing Geography
               </ListingFormLabel>
-              <ListingTooltip label="Select the Superteam region this listing will be available and relevant to. Only users from the region you specify will be able to apply/submit to this listing." />
+              <ListingTooltip label="Select the CoDesign region this listing will be available and relevant to. Only users from the region you specify will be able to apply/submit to this listing." />
             </Flex>
             <Select {...register('region')}>
               <option value={Regions.GLOBAL}>Global</option>
@@ -672,7 +672,7 @@ export const ListingBasic = ({
               <ListingFormLabel htmlFor="referredBy">
                 Referred By
               </ListingFormLabel>
-              <ListingTooltip label="Who referred you to add this listing on Superteam Earn?" />
+              <ListingTooltip label="Who referred you to add this listing on CoDesign?" />
             </Flex>
 
             <Select {...register('referredBy')} placeholder="Select">
@@ -691,7 +691,7 @@ export const ListingBasic = ({
               <ListingFormLabel htmlFor="isPrivate">
                 Private Listing
               </ListingFormLabel>
-              <ListingTooltip label="Private listings are only accessible through direct links and do not appear on the Superteam Earn homepage or other public pages on the website." />
+              <ListingTooltip label="Private listings are only accessible through direct links and do not appear on the CoDesign homepage or other public pages on the website." />
             </Flex>
             <Switch
               mb={2}

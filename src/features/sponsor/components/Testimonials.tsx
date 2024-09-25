@@ -25,7 +25,7 @@ import { TestimonialCard, type TestimonialProps } from './TestimonialCard';
 const testimonials: TestimonialProps[] = [
   {
     stars: 5,
-    message: `I'll say it again, Earn is going to become one of the most important non-protocol products in the Solana ecosystem. Connecting developers (amongst others) to opportunity and protocols to talent.`,
+    message: `I'll say it again, CoDesign is going to become one of the most important non-protocol products in the Solana ecosystem. Connecting developers (amongst others) to opportunity and protocols to talent.`,
     logo: Solana,
     pfp: ChasedBarker,
     name: 'Chase Barker',
@@ -34,7 +34,7 @@ const testimonials: TestimonialProps[] = [
   {
     stars: 5,
     message: `I have a 💙 affair with 
-@SuperteamEarn. Our team uses it to scout crypto-native talent. 
+@CoDesignTop. Our team uses it to scout crypto-native talent. 
 <br />
 <br />
 Perfect hiring workflow: 
@@ -46,7 +46,7 @@ Perfect hiring workflow: 
   },
   {
     stars: 4,
-    message: `Superteam Earn is one of the most underrated and valuable platforms for both Solana protocols and 
+    message: `CoDesign is one of the most underrated and valuable platforms for both Solana protocols and 
 users`,
     logo: Parcl,
     pfp: EvanSolomon,
@@ -102,8 +102,8 @@ export function Testimonials() {
             fontSize={{ base: '1.4rem', md: '1.87rem' }}
             lineHeight={1.1}
           >
-            Superteam are chads. <br />
-            Superteam Earn is awesome. <br />
+            CoDesign is chads. <br />
+            CoDesign is awesome. <br />
             Everybody should use it 💜
           </Text>
           <HStack gap={8}>

@@ -38,11 +38,11 @@ export default function VerifyRequest() {
       <Box py={3} borderBottomWidth={2}>
         <Link as={NextLink} mx="auto" href="/">
           <Image
-            h={6}
+            h={8}
             mx="auto"
             cursor="pointer"
             objectFit={'contain'}
-            alt={'Superteam Earn'}
+            alt={'CoDesign'}
             onClick={() => {
               router.push('/');
             }}

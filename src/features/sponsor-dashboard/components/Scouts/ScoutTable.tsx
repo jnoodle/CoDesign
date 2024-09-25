@@ -242,7 +242,7 @@ export function ScoutTable({ bountyId, scouts, setInvited }: Props) {
                           {scout.name}
                         </Text>
                         {scout.recommended && (
-                          <Tooltip fontSize="xs" label="Superteam Recommended">
+                          <Tooltip fontSize="xs" label="CoDesign Recommended">
                             <Image src={SparkleIcon} alt="sparkle" />
                           </Tooltip>
                         )}

@@ -158,7 +158,7 @@ export function SelectSponsor({
           fontSize: '14px',
           borderColor: '#cbd5e1',
           '&:hover': {
-            borderColor: '#6366F1',
+            borderColor: '#A259FF',
           },
           minHeight: '46px',
           flexWrap: 'nowrap',

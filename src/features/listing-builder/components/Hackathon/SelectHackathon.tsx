@@ -149,7 +149,7 @@ export function SelectHackathon({
           fontSize: '14px',
           borderColor: '#94a3b8',
           '&:hover': {
-            borderColor: '#6366F1',
+            borderColor: '#A259FF',
           },
           minHeight: '46px',
           flexWrap: 'nowrap',

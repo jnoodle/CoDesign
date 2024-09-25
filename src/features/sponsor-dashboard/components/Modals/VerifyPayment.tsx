@@ -394,9 +394,9 @@ export const VerifyPaymentModal = ({
                 fontSize="sm"
                 fontWeight={400}
               >
-                If you have paid the winners outside of Earn and want to update
-                the status of this listing as {`"Completed"`}, please add the
-                transaction links of the payments made to the winners.
+                If you have paid the winners outside of CoDesign and want to
+                update the status of this listing as {`"Completed"`}, please add
+                the transaction links of the payments made to the winners.
               </Text>
             </VStack>
             <VStack gap={6} my={6}>

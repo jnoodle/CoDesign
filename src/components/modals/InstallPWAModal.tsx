@@ -115,7 +115,7 @@ export const InstallPWAModal = () => {
         <ModalHeader borderBottom="1px" borderBottomColor="brand.slate.300">
           <HStack>
             <Icon as={MdOutlineInstallMobile} color={'brand.slate.500'} />
-            <Text fontSize={'lg'}>Install Earn</Text>
+            <Text fontSize={'lg'}>Install CoDesign</Text>
           </HStack>
         </ModalHeader>
         <ModalCloseButton mt={{ base: 2, md: 3 }} />
@@ -124,14 +124,14 @@ export const InstallPWAModal = () => {
             <Flex align={'center'} direction={'column'} mt={10}>
               <Image
                 src={'/android-chrome-512x512.png'}
-                alt="Superteam Earn Icon"
+                alt="CoDesign Icon"
                 height={63}
                 width={63}
               />
               <Flex align={'center'} direction={'column'} my={12}>
                 <Text fontWeight={700}>Never miss a listing again!</Text>
                 <Text w="75%" mt={1} color="brand.slate.500" textAlign="center">
-                  Add Earn to your homescreen and always stay updated.
+                  Add CoDesign to your homescreen and always stay updated.
                 </Text>
               </Flex>
               {isAutoInstallable ? (

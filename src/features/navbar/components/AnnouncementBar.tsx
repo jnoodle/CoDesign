@@ -25,8 +25,8 @@ export const AnnouncementBar = () => {
           <Link as={NextLink} textDecoration={'underline'} href={href}>
             Click here
           </Link>{' '}
-          to unlock $250k+ in prizes at Solana’s global hackathon, exclusively
-          on Earn
+          to unlock $250k+ in prizes at Web3’s global hackathon, exclusively on
+          CoDesign
         </Text>
       </Box>
     );

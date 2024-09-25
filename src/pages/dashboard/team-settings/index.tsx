@@ -154,7 +154,7 @@ const Index = () => {
             )) && (
             <Button
               className="ph-no-capture"
-              color="#6366F1"
+              color="#A259FF"
               bg="#E0E7FF"
               leftIcon={<AddIcon />}
               onClick={() => {
@@ -375,7 +375,7 @@ const RemoveMemberModal = ({
         isAdmin &&
         member?.user?.email !== session?.user?.email && (
           <Button
-            color="#6366F1"
+            color="#A259FF"
             bg="#E0E7FF"
             onClick={() => setIsOpen(true)}
             size="sm"

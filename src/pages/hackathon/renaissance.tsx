@@ -21,8 +21,8 @@ export default function Renaissance() {
       className="bg-white"
       meta={
         <Meta
-          title="Renaissance | Superteam Earn"
-          description="Explore the latest bounties on Superteam Earn, offering opportunities in the crypto space across Design, Development, and Content."
+          title="Renaissance | CoDesign"
+          description="Explore the latest bounties on CoDesign, offering opportunities in the crypto space across Design, Development, and Content."
           canonical="https://earn.superteam.fun"
         />
       }
@@ -41,7 +41,7 @@ export default function Renaissance() {
         >
           <RenaissanceLogo styles={{ height: '80px', width: 'auto' }} />
           <Text mt={4} px={6} color="blackAlpha.800" textAlign={'center'}>
-            Submit to side tracks of the latest Solana Global Hackathon
+            Submit to side tracks of the latest Web3 Global Hackathon
           </Text>
           <Flex align="center" gap={6}>
             <Button

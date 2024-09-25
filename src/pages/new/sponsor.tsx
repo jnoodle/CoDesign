@@ -102,8 +102,8 @@ const CreateSponsor = () => {
     <Default
       meta={
         <Meta
-          title="Create Sponsor | Superteam Earn"
-          description="Every Solana opportunity in one place!"
+          title="Create Sponsor | CoDesign"
+          description="Every Web3 opportunity in one place!"
           canonical="https://earn.superteam.fun/new/sponsor/"
         />
       }
@@ -136,7 +136,7 @@ const CreateSponsor = () => {
                 fontWeight={400}
                 textAlign={'center'}
               >
-                from joining Superteam Earn
+                from joining CoDesign
               </Text>
               <SignIn loginStep={loginStep} setLoginStep={setLoginStep} />
             </Box>
@@ -151,7 +151,7 @@ const CreateSponsor = () => {
               fontSize={'24px'}
               fontWeight={700}
             >
-              Welcome to Superteam Earn
+              Welcome to CoDesign
             </Heading>
             <Text
               color={'gray.400'}

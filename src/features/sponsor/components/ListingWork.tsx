@@ -25,7 +25,7 @@ const works: ListingCardProps[] = [
   },
   {
     pfp: OKX,
-    title: 'OKX Super Season Thread Bounty',
+    title: 'OKX Super Season Thread Bounty',
     name: 'OKX',
     description: `In celebration of the Solana Super Season, OKX is calling all crypto enthusiasts to dive into the details of this campaign on OKX Web3 Wallet, and share their insights in a captivating Twitter thread.`,
     skills: ['writing', 'marketing', 'community'],

@@ -21,8 +21,8 @@ export default function Scribes() {
       className="bg-white"
       meta={
         <Meta
-          title="Solana Scribes | Superteam Earn"
-          description="Explore the latest bounties on Superteam Earn, offering opportunities in the crypto space across Design, Development, and Content."
+          title="Web3 Scribes | CoDesign"
+          description="Explore the latest bounties on CoDesign, offering opportunities in the crypto space across Design, Development, and Content."
           canonical="https://earn.superteam.fun"
         />
       }
@@ -44,7 +44,7 @@ export default function Scribes() {
           </Text>
           <ScribesLogo styles={{ height: '80px', width: 'auto' }} />
           <Text mt={4} px={6} color="brand.slate.600" textAlign={'center'}>
-            Participate in Solana&apos;s first ever content hackathon
+            Participate in Web3&apos;s first ever content hackathon
           </Text>
           <Flex pb={4}>
             <Button
@@ -58,7 +58,7 @@ export default function Scribes() {
               }
               rounded="full"
             >
-              Join Solana Collective&apos;s Discord
+              Join Web3 Collective&apos;s Discord
             </Button>
           </Flex>
         </Flex>

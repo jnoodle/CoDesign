@@ -39,7 +39,7 @@ export function Footer() {
         fontWeight={600}
         textAlign={'center'}
       >
-        Where Solana teams come to get sh*t done
+        Where Web3 teams come to get sh*t done
       </Text>
       <Link
         className="ph-no-capture"

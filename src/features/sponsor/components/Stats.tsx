@@ -34,7 +34,7 @@ const initialStats = [
   },
   {
     title: '16K',
-    label: 'Verified Earn Users',
+    label: 'Verified CoDesign Users',
     showEarn: true,
   },
   {
@@ -47,7 +47,7 @@ export function Stats() {
   const { data: totals } = useQuery(userCountQuery);
 
   const stats = initialStats.map((stat) => {
-    if (stat.label === 'Verified Earn Users' && totals?.totalUsers) {
+    if (stat.label === 'Verified CoDesign Users' && totals?.totalUsers) {
       return {
         ...stat,
         title: new Intl.NumberFormat('en-US', {
@@ -72,7 +72,7 @@ export function Stats() {
       <Box w="full" maxW={{ base: '20rem', xl: '30rem' }}>
         <HighQualityImage
           src={GlobalEarn}
-          alt="Superteam Earn Global"
+          alt="CoDesign Global"
           style={{
             width: '100%',
             maxWidth: '30rem',
@@ -85,14 +85,14 @@ export function Stats() {
           textAlign={{ base: 'center', lg: 'left' }}
         >
           <Text fontSize={fontSize} fontWeight={600} lineHeight={1}>
-            The distribution of the Superteam network
+            The distribution of the CoDesign network
           </Text>
           <Text
             color="brand.slate.500"
             fontSize={{ base: '1.25rem', lg: '1.4rem' }}
             fontWeight={500}
           >
-            Get instant access to Superteam’s network of the best crypto talent
+            Get instant access to CoDesign’s network of the best crypto talent
             in the world
           </Text>
         </VStack>
@@ -129,7 +129,7 @@ export function Stats() {
                   >
                     <HighQualityImage
                       src={EarnIcon}
-                      alt="Earn Icon"
+                      alt="CoDesign Icon"
                       style={{
                         width: '100%',
                         height: '100%',

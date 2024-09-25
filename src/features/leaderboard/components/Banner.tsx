@@ -23,7 +23,7 @@ export function Banner() {
           Talent Leaderboard
         </Text>
         <Text mt={1} color="brand.slate.400" lineHeight={1.2}>
-          See where you stand amongst the {"Solana's"} top contributors
+          See where you stand amongst the {"Web3's"} top contributors
         </Text>
       </VStack>
       <Flex display={{ base: 'flex', md: 'none' }} h={'100%'}>

@@ -43,7 +43,7 @@ export const ListingSuccessModal = ({
   const listingLink = (medium?: 'twitter' | 'telegram') =>
     `${getURL()}listings/${type}/${slug}/${medium ? `?utm_source=superteamearn&utm_medium=${medium}&utm_campaign=sharelisting` : ``}`;
 
-  const tweetShareContent = `Check out my newly added @SuperteamEarn opportunity!
+  const tweetShareContent = `Check out my newly added @CoDesignTop opportunity!
 
 ${listingLink('twitter')}
 `;
@@ -89,7 +89,7 @@ ${listingLink('twitter')}
                 fontWeight={400}
               >
                 {isVerified
-                  ? 'Share the love on your socials and invite Earn’s best talent!'
+                  ? 'Share the love on your socials and invite CoDesign’s best talent!'
                   : 'Share the love on your socials!'}
               </Text>
               <VStack gap={4} w={'full'} mt={3}>

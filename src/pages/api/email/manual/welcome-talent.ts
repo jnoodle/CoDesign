@@ -33,7 +33,7 @@ export default async function handler(
     await resend.emails.send({
       from: kashEmail,
       to: [userEmail],
-      subject: 'Welcome to Superteam Earn!',
+      subject: 'Welcome to CoDesign!',
       react: WelcomeTalentTemplate(),
       reply_to: replyToEmail,
     });

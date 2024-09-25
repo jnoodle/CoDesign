@@ -27,14 +27,14 @@ export const FeedCardLink = ({
       <LinkOverlay href={href} rel="noopener noreferrer" target="_blank">
         <Text
           as="span"
-          color={'#6366F1'}
+          color={'#A259FF'}
           fontSize={{ base: 'sm', md: 'md' }}
           fontWeight={600}
         >
           {children}
         </Text>
       </LinkOverlay>
-      <ArrowForwardIcon color={'#6366F1'} />
+      <ArrowForwardIcon color={'#A259FF'} />
     </LinkBox>
   );
 };

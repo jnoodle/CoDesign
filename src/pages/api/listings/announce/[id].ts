@@ -194,12 +194,12 @@ async function announce(req: NextApiRequestWithSponsor, res: NextApiResponse) {
       listing.type !== 'project'
     ) {
       sendEmailNotification({
-        type: 'superteamWinners',
+        type: 'coDesignWinners',
         id,
         triggeredBy: userId,
       });
     } else {
-      logger.info('Sponsor is not Superteam. Skipping sending winner emails.');
+      logger.info('Sponsor is not CoDesign. Skipping sending winner emails.');
     }
 
     try {

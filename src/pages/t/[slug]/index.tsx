@@ -165,7 +165,7 @@ function TalentProfile({ talent, stats }: TalentProps) {
       return (
         <Button
           className="ph-no-capture"
-          color={outline ? 'brand.slate.500' : '#6366F1'}
+          color={outline ? 'brand.slate.500' : '#A259FF'}
           fontSize="sm"
           fontWeight={500}
           bg={outline ? 'white' : '#EDE9FE'}
@@ -181,7 +181,7 @@ function TalentProfile({ talent, stats }: TalentProps) {
 
     return (
       <IconButton
-        color={outline ? 'brand.slate.500' : '#6366F1'}
+        color={outline ? 'brand.slate.500' : '#A259FF'}
         fontSize="sm"
         fontWeight={500}
         bg={outline ? 'white' : '#EDE9FE'}
@@ -211,8 +211,8 @@ function TalentProfile({ talent, stats }: TalentProps) {
 
   const title =
     talent?.firstName && talent?.lastName
-      ? `${talent?.firstName} ${talent?.lastName} | Superteam Earn Talent`
-      : 'Superteam Earn';
+      ? `${talent?.firstName} ${talent?.lastName} | CoDesign Talent`
+      : 'CoDesign';
 
   return (
     <>
@@ -227,7 +227,7 @@ function TalentProfile({ talent, stats }: TalentProps) {
             <meta name="twitter:card" content="summary_large_image" />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
-            <meta property="og:image:alt" content="Talent on Superteam" />
+            <meta property="og:image:alt" content="Talent on CoDesign" />
             <meta charSet="UTF-8" key="charset" />
             <meta
               name="viewport"
@@ -304,10 +304,10 @@ function TalentProfile({ talent, stats }: TalentProps) {
                         posthog.capture('reach out_talent profile');
                         const email = encodeURIComponent(talent?.email || '');
                         const subject = encodeURIComponent(
-                          'Saw Your ST Earn Profile!',
+                          'Saw Your CoDesign Profile!',
                         );
                         const bcc = encodeURIComponent(
-                          'support@superteamearn.com',
+                          'codesign.top@proton.me',
                         );
                         window.location.href = `mailto:${email}?subject=${subject}&bcc=${bcc}`;
                       })}

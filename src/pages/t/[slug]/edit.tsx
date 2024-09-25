@@ -310,8 +310,8 @@ export default function EditProfilePage({ slug }: { slug: string }) {
       <Default
         meta={
           <Meta
-            title="Superteam Earn"
-            description="Every Solana opportunity in one place!"
+            title="CoDesign"
+            description="Every Web3 opportunity in one place!"
           />
         }
       >

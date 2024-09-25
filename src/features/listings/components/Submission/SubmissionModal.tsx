@@ -517,7 +517,7 @@ export const SubmissionModal = ({
             {!!error && (
               <Text align="center" mb={2} color="red">
                 Sorry! An error occurred while submitting. <br />
-                Please try again or contact us at support@superteamearn.com
+                Please try again or contact us at codesign.top@proton.me
               </Text>
             )}
             <Button

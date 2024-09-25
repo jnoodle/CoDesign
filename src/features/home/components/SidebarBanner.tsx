@@ -29,7 +29,7 @@ export const SidebarBanner = () => {
         />
       </HStack>
       <Text color={'white'} fontSize={'lg'} fontWeight={'600'} opacity={0.9}>
-        Build a project for the latest Solana global hackathon!
+        Build a project for the latest Web3 global hackathon!
       </Text>
       <Text
         mt={'0.5rem'}
@@ -37,8 +37,9 @@ export const SidebarBanner = () => {
         fontSize={'1rem'}
         lineHeight={'1.1875rem'}
       >
-        Submit to any of the Radar Side Tracks on Earn, and stand to win from a
-        pool of $250k+. Deadline for submissions is October 9, 2024 (UTC).
+        Submit to any of the Radar Side Tracks on CoDesign, and stand to win
+        from a pool of $250k+. Deadline for submissions is October 9, 2024
+        (UTC).
       </Text>
       <Button
         as={NextLink}

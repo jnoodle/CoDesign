@@ -69,7 +69,7 @@ export function Hero() {
             lineHeight="1.15em"
             letterSpacing={'-0.04em'}
           >
-            Where Solana teams come to get sh*t done
+            Where Web3 teams come to get sh*t done
           </Text>
           <Text
             w="100%"
@@ -81,8 +81,8 @@ export function Hero() {
               textWrap: 'pretty',
             }}
           >
-            The world’s best Solana talent is on Superteam Earn. Get work done
-            from the right people, at the right time.
+            The world’s best Web3 talent is on CoDesign. Get work done from the
+            right people, at the right time.
           </Text>
 
           <Flex justify="center" gap="2rem" w="100%">

@@ -531,7 +531,7 @@ export default function Hackathon() {
                               rounded="md"
                             >
                               <Button
-                                color="#6366F1"
+                                color="#A259FF"
                                 fontSize={'13px'}
                                 fontWeight={500}
                                 _hover={{ bg: '#E0E7FF' }}

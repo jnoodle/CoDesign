@@ -117,7 +117,7 @@ export default function LocalProfiles() {
         <Flex align="center" gap={2}>
           {superteam?.code && <UserFlag location={superteam.code} isCode />}
           <Text color="brand.slate.800" fontSize="lg" fontWeight={600}>
-            Local Earn Profiles
+            Local CoDesign Profiles
           </Text>
           <Divider
             h="60%"

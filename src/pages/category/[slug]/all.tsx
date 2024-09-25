@@ -19,14 +19,14 @@ function AllCategoryListingsPage({ slug }: { slug: string }) {
   );
 
   const titlesForSlugs: { [key in SlugKeys]: string } = {
-    design: 'Design Bounties and Grants | Superteam Earn',
-    content: 'Content Bounties and Grants | Superteam Earn',
-    development: 'Development Bounties and Grants | Superteam Earn',
-    other: 'Other Bounties and Grants | Superteam Earn',
+    design: 'Design Bounties and Grants | CoDesign',
+    content: 'Content Bounties and Grants | CoDesign',
+    development: 'Development Bounties and Grants | CoDesign',
+    other: 'Other Bounties and Grants | CoDesign',
   };
   const titleKey = slug as SlugKeys;
-  const title = titlesForSlugs[titleKey] || 'Superteam Earn';
-  const metaDescription = `Find the latest ${slug.toLowerCase()} bounties and grants for freelancers and builders in the crypto space on Superteam Earn.`;
+  const title = titlesForSlugs[titleKey] || 'CoDesign';
+  const metaDescription = `Find the latest ${slug.toLowerCase()} bounties and grants for freelancers and builders in the crypto space on CoDesign.`;
   const canonicalURL = `https://earn.superteam.fun/category/${slug}/all`;
 
   return (

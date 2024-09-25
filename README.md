@@ -1,7 +1,7 @@
 <div align="center">
   <br/>
   <img src="https://pbs.twimg.com/profile_images/1655546485365407744/dOeIC0R-_400x400.jpg" style="border-radius:10px" width="120px" height="auto"/>
-  <h2>Superteam Earn</h2>
+  <h2>CoDesign</h2>
   <p>
     <strong>An open source platform connecting crypto founders with elite talent to create bounties, and accelerate project completion</strong>
   </p>
@@ -72,7 +72,7 @@ Facing an issue? Please feel free to reach out to [Abhishek](https://twitter.com
 ### Why should you contribute to Earn?
 - Consistent, good-quality contributions will earn you [contributor](https://docs.superteam.fun/the-superteam-handbook/getting-started/community-structure) status in the Superteam of your preference! Contributors get special access to channels on Discord, preferential entry to events, and is a great stepping stone to becoming a Superteam member.
 - Get [XP](https://docs.superteam.fun/the-superteam-handbook/community/the-reputation-system) if you're already a Superteam Member or Contributor
-- Unwavering love and support from the Superteam Earn team!
+- Unwavering love and support from the CoDesign team!
 
 ### Contributors
 <a href="https://github.com/SuperteamDAO/earn/graphs/contributors">

@@ -83,8 +83,8 @@ export default function Radar() {
       className="bg-white"
       meta={
         <Meta
-          title="Radar | Superteam Earn"
-          description="Build a project for the latest Solana global hackathon!"
+          title="Radar | CoDesign"
+          description="Build a project for the latest Web3 global hackathon!"
           canonical="https://earn.superteam.fun"
           og={`${router.basePath}/assets/og/hackathon/${slug}.png`}
         />
@@ -124,8 +124,8 @@ export default function Radar() {
             transition={{ duration: 0.4, delay: 0.15 }}
             maxW="28rem"
           >
-            Submit to exclusive tracks of the latest Solana Global Hackathon on
-            Earn
+            Submit to exclusive tracks of the latest Web3 Global Hackathon on
+            CoDesign
           </MotionText>
           <Flex align="center" gap={6}>
             <MotionButton

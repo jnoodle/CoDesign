@@ -210,8 +210,8 @@ export function SponsorLayout({
       className="bg-white"
       meta={
         <Meta
-          title="Superteam Earn | Work to Earn in Crypto"
-          description="Explore the latest bounties on Superteam Earn, offering opportunities in the crypto space across Design, Development, and Content."
+          title="CoDesign | Work to CoDesign in Crypto"
+          description="Explore the latest bounties on CoDesign, offering opportunities in the crypto space across Design, Development, and Content."
           canonical="https://earn.superteam.fun"
         />
       }
@@ -234,8 +234,8 @@ export function SponsorLayout({
           fontSize={'xl'}
           fontWeight={500}
         >
-          The Sponsor Dashboard on Earn is not optimized for mobile yet. Please
-          use a desktop to check out the Sponsor Dashboard
+          The Sponsor Dashboard on CoDesign is not optimized for mobile yet.
+          Please use a desktop to check out the Sponsor Dashboard
         </Text>
       </Flex>
       <Flex justify="start" display={{ base: 'none', md: 'flex' }} minH="100vh">

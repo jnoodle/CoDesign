@@ -32,7 +32,7 @@ export function Banner({
   const sponsorId = isHackathon ? user?.hackathonId : user?.currentSponsorId;
 
   const tooltipTextReward = `Total compensation (in USD) of listings where the winners have been announced`;
-  const tooltipTextListings = `Total number of listings added to Earn`;
+  const tooltipTextListings = `Total number of listings added to CoDesign`;
   const tooltipTextSubmissions = `Total number of submissions/applications received on all listings`;
 
   const sponsor = isHackathon ? stats : user?.currentSponsor;

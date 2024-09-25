@@ -40,7 +40,7 @@ const banners: CategoryBanner[] = [
   {
     type: 'other',
     img: bannerPrefix + 'Other.png',
-    heading: 'Find your next gig on Earn',
+    heading: 'Find your next gig on CoDesign',
     description:
       'If you have a unique skill set that doesn’t fit into the other categories, you might find your next gig here.',
   },

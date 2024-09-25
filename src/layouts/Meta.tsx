@@ -73,8 +73,8 @@ const Meta = (props: IMetaProps) => {
           ],
         }}
         twitter={{
-          handle: '@SuperteamEarn',
-          site: '@SuperteamEarn',
+          handle: '@CoDesignTop',
+          site: '@CoDesignTop',
           cardType: 'summary_large_image',
         }}
       />

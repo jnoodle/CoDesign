@@ -222,7 +222,7 @@ export default async function handler(request: NextRequest) {
                   width: '200px',
                   display: 'flex',
                 }}
-                alt="ST Earn Logo"
+                alt="CoDesign Logo"
                 src={logo}
               />
             </div>

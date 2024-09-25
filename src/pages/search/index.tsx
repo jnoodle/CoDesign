@@ -115,7 +115,7 @@ const Search = ({
     <Default
       meta={
         <Meta
-          title={`Search - ${query} | Superteam Earn`}
+          title={`Search - ${query} | CoDesign`}
           description={`Search Results for ${query}`}
         />
       }

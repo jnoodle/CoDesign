@@ -107,10 +107,10 @@ export function ListingPageLayout({
         <Head>
           <title>{`${
             initialBounty?.title || 'Apply'
-          } by ${initialBounty?.sponsor?.name} | Superteam Earn Listing`}</title>
+          } by ${initialBounty?.sponsor?.name} | CoDesign Listing`}</title>
           <meta
             name="description"
-            content={`${getListingTypeLabel(initialBounty?.type ?? 'Listing')} on Superteam Earn | ${
+            content={`${getListingTypeLabel(initialBounty?.type ?? 'Listing')} on CoDesign | ${
               initialBounty?.sponsor?.name
             } is seeking freelancers and builders ${
               initialBounty?.title
@@ -124,18 +124,18 @@ export function ListingPageLayout({
           />
           <meta
             property="og:title"
-            content={`${initialBounty?.title || 'Listing'} | Superteam Earn`}
+            content={`${initialBounty?.title || 'Listing'} | CoDesign`}
           />
           <meta property="og:image" content={ogImage.toString()} />
           <meta
             name="twitter:title"
-            content={`${initialBounty?.title || 'Listing'} | Superteam Earn`}
+            content={`${initialBounty?.title || 'Listing'} | CoDesign`}
           />
           <meta name="twitter:image" content={ogImage.toString()} />
           <meta name="twitter:card" content="summary_large_image" />
           <meta property="og:image:width" content="1200" />
           <meta property="og:image:height" content="630" />
-          <meta property="og:image:alt" content="Superteam Bounty" />
+          <meta property="og:image:alt" content="CoDesign Bounty" />
           <meta charSet="UTF-8" key="charset" />
           <meta
             name="viewport"

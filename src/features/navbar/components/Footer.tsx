@@ -167,7 +167,7 @@ export const Footer = () => {
       text: 'Changelog',
       href: 'https://superteamdao.notion.site/Superteam-Earn-Changelog-faf0c85972a742699ecc07a52b569827',
     },
-    { text: 'Contact Us', href: 'mailto:support@superteamearn.com' },
+    { text: 'Contact Us', href: 'mailto:codesign.top@proton.me' },
   ];
 
   return (
@@ -180,12 +180,7 @@ export const Footer = () => {
         >
           <Flex direction="column" maxW="540px" mb={{ base: 8, md: 0 }}>
             <Flex align="center" mb={4}>
-              <Image
-                h={6}
-                mr={4}
-                alt="Superteam Earn"
-                src="/assets/logo/logo.svg"
-              />
+              <Image h={8} mr={4} alt="CoDesign" src="/assets/logo/logo.svg" />
             </Flex>
             <Text
               mb={6}
@@ -193,8 +188,8 @@ export const Footer = () => {
               fontSize={{ base: 'sm', md: 'md' }}
             >
               Discover high paying crypto bounties, projects and grants from the
-              best Solana companies in one place and apply to them using a
-              single profile.
+              best Web3 companies in one place and apply to them using a single
+              profile.
             </Text>
             <Flex gap={4}>
               <GitHub link="https://github.com/SuperteamDAO/earn" />
@@ -222,7 +217,7 @@ export const Footer = () => {
             direction={{ base: 'column', md: 'row' }}
           >
             <Text mb={{ base: 4, md: 0 }} color="brand.slate.500" fontSize="sm">
-              © {currentYear} Superteam. All rights reserved.
+              © {currentYear} CoDesign. All rights reserved.
             </Text>
             <Flex align="center">
               <Text
