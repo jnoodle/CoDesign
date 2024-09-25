@@ -1,15 +1,4 @@
-import {
-  Avatar,
-  AvatarGroup,
-  Box,
-  Center,
-  Divider,
-  Flex,
-  Icon,
-  Image,
-  Text,
-} from '@chakra-ui/react';
-import { useQuery } from '@tanstack/react-query';
+import { Box, Center, Divider, Flex, Icon, Text } from '@chakra-ui/react';
 import axios from 'axios';
 import { type GetServerSideProps } from 'next';
 import NextImage from 'next/image';
@@ -20,13 +9,8 @@ import { MdCheck } from 'react-icons/md';
 import { SponsorButton } from '@/components/ProfileSetup/SponsorButton';
 import { TalentButton } from '@/components/ProfileSetup/TalentButton';
 import { AuthWrapper } from '@/features/auth';
-import { userCountQuery } from '@/features/home';
 import { Default } from '@/layouts/Default';
 import { Meta } from '@/layouts/Meta';
-import Tensor from '@/public/assets/company-logos/tensor.svg';
-import Jupiter from '@/public/assets/landingsponsor/sponsors/jupiter.png';
-import Solflare from '@/public/assets/landingsponsor/sponsors/solflare.png';
-import Squads from '@/public/assets/landingsponsor/sponsors/squads.png';
 import { useUser } from '@/store/user';
 import { getURL } from '@/utils/validUrl';
 
@@ -35,22 +19,22 @@ export default function NewProfilePage({
 }: {
   showTalentProfile: boolean;
 }) {
-  const avatars = [
-    {
-      name: 'Abhishkek',
-      src: '/assets/pfps/t1.webp',
-    },
-    {
-      name: 'Pratik',
-      src: '/assets/pfps/md2.webp',
-    },
-    {
-      name: 'Yash',
-      src: '/assets/pfps/fff1.webp',
-    },
-  ];
+  // const avatars = [
+  //   {
+  //     name: 'Abhishkek',
+  //     src: '/assets/pfps/t1.webp',
+  //   },
+  //   {
+  //     name: 'Pratik',
+  //     src: '/assets/pfps/md2.webp',
+  //   },
+  //   {
+  //     name: 'Yash',
+  //     src: '/assets/pfps/fff1.webp',
+  //   },
+  // ];
 
-  const { data: totals } = useQuery(userCountQuery);
+  // const { data: totals } = useQuery(userCountQuery);
 
   const router = useRouter();
   const { user } = useUser();
