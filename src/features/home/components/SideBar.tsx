@@ -12,10 +12,7 @@ import { HowItWorks } from './HowItWorks';
 import { LiveListings } from './LiveListings';
 import { RecentActivity } from './RecentActivity';
 import { RecentEarners } from './RecentEarners';
-import { SidebarBanner } from './SidebarBanner';
-import { SponsorBanner } from './SponsorBanner';
 import { TotalStats } from './TotalStats';
-import { VibeCard } from './VibeCard';
 
 interface SideBarProps {
   type: 'landing' | 'listing' | 'category' | 'region' | 'niche' | 'feed';
@@ -32,7 +29,7 @@ export const HomeSideBar = ({ type }: SideBarProps) => {
     <Flex direction={'column'} rowGap={'2.5rem'} w={'24rem'} py={6} pl={6}>
       {type === 'feed' && (
         <>
-          <VibeCard />
+          {/*<VibeCard />*/}
           <LiveListings>
             <Flex align="center" justify={'space-between'}>
               <Text color={'gray.400'} fontSize={'sm'} fontWeight={500}>
@@ -52,10 +49,10 @@ export const HomeSideBar = ({ type }: SideBarProps) => {
           </LiveListings>
         </>
       )}
-      {router.asPath === '/' &&
-        (!user || (!user.isTalentFilled && !user.currentSponsorId)) && (
-          <SponsorBanner />
-        )}
+      {/*{router.asPath === '/' &&*/}
+      {/*  (!user || (!user.isTalentFilled && !user.currentSponsorId)) && (*/}
+      {/*    <SponsorBanner />*/}
+      {/*  )}*/}
       {type !== 'feed' ? (
         <>
           <TotalStats
@@ -64,7 +61,7 @@ export const HomeSideBar = ({ type }: SideBarProps) => {
             TVE={totals?.totalInUSD}
           />
           <HowItWorks />
-          <SidebarBanner />
+          {/*<SidebarBanner />*/}
           <RecentEarners earners={recentEarners} />
           <RecentActivity />
         </>

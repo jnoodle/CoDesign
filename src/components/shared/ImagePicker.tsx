@@ -147,7 +147,7 @@ export const ImagePicker = ({
             Choose or drag and drop media
           </Text>
           <Text color="brand.slate.400" fontSize="sm">
-            Maximum size 5 MB
+            Maximum size 1 MB
           </Text>
         </Flex>
       </Flex>

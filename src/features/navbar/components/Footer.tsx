@@ -17,7 +17,7 @@ import React, { useEffect, useState } from 'react';
 
 import { UserFlag } from '@/components/shared/UserFlag';
 import { Superteams } from '@/constants/Superteam';
-import { Discord, GitHub, Twitter } from '@/features/talent';
+import { Twitter } from '@/features/talent';
 
 type Country = {
   name: string;
@@ -36,7 +36,7 @@ const FooterColumn = ({
   links,
 }: {
   title: string;
-  links: { href: string; text: string }[];
+  links: { href: string; text: any }[];
 }) => (
   <Stack align="flex-start">
     <Text
@@ -168,6 +168,10 @@ export const Footer = () => {
       href: 'https://superteamdao.notion.site/Superteam-Earn-Changelog-faf0c85972a742699ecc07a52b569827',
     },
     { text: 'Contact Us', href: 'mailto:codesign.top@proton.me' },
+    {
+      text: <Twitter link="https://x.com/CoDesignTop" />,
+      href: 'https://x.com/CoDesignTop',
+    },
   ];
 
   return (
@@ -188,14 +192,31 @@ export const Footer = () => {
               fontSize={{ base: 'sm', md: 'md' }}
             >
               Discover high paying crypto bounties, projects and grants from the
-              best Web3 companies in one place and apply to them using a single
-              profile.
+              best Web3 companies in one place.
+              {/*and apply to them using a single profile.*/}
             </Text>
-            <Flex gap={4}>
-              <GitHub link="https://github.com/SuperteamDAO/earn" />
-              <Twitter link="https://twitter.com/superteamearn" />
-              <Discord link="https://discord.com/invite/Mq3ReaekgG" />
+            <Flex align="center" justify="flex-start">
+              <Link href="https://waterflyshop.com/" isExternal target="_blank">
+                <Image
+                  w={20}
+                  mr={4}
+                  alt="Waterfly"
+                  src="https://waterflyshop.com/cdn/shop/files/waterfly_logo_f3212ff5-f88e-419b-a330-1c16e50e7d1e.png?pad_color=fff&v=1717148382&width=720"
+                />
+              </Link>
+              <Text
+                as="b"
+                color="brand.slate.600"
+                fontSize={{ base: 'md', md: 'lg' }}
+              >
+                Sponsored
+              </Text>
             </Flex>
+            {/*<Flex gap={4}>*/}
+            {/*  <GitHub link="https://github.com/SuperteamDAO/earn" />*/}
+            {/*  <Twitter link="https://x.com/CoDesignTop" />*/}
+            {/*  <Discord link="https://discord.com/invite/Mq3ReaekgG" />*/}
+            {/*</Flex>*/}
           </Flex>
           <Flex
             justify={{ base: 'flex-start', md: 'flex-end' }}
@@ -219,17 +240,17 @@ export const Footer = () => {
             <Text mb={{ base: 4, md: 0 }} color="brand.slate.500" fontSize="sm">
               © {currentYear} CoDesign. All rights reserved.
             </Text>
-            <Flex align="center">
-              <Text
-                mr={2}
-                color="brand.slate.500"
-                fontSize="sm"
-                fontWeight="500"
-              >
-                REGION
-              </Text>
-              <CountrySelector />
-            </Flex>
+            {/*<Flex align="center">*/}
+            {/*  <Text*/}
+            {/*    mr={2}*/}
+            {/*    color="brand.slate.500"*/}
+            {/*    fontSize="sm"*/}
+            {/*    fontWeight="500"*/}
+            {/*  >*/}
+            {/*    REGION*/}
+            {/*  </Text>*/}
+            {/*  <CountrySelector />*/}
+            {/*</Flex>*/}
           </Flex>
         </Container>
       </Box>

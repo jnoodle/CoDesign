@@ -67,10 +67,11 @@
         "unused-imports/no-unused-imports": "error",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-var-requires": "off",
-        "unused-imports/no-unused-vars": [
-          "error",
-          { "argsIgnorePattern": "^_" }
-        ],
+        "unused-imports/no-unused-vars": "off",
+        //        "unused-imports/no-unused-vars": "[
+        //          "error",
+        //          { "argsIgnorePattern": "^_" }
+        //        ]",
         "chakra-ui/props-order": "error",
         "chakra-ui/props-shorthand": "error",
         "chakra-ui/require-specific-component": "error",

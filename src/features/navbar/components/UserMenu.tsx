@@ -69,7 +69,7 @@ export function UserMenu({}) {
             router.push('/new');
           }}
           size="sm"
-          variant={'ghost'}
+          variant={'outline'}
         >
           Complete your Profile
         </Button>

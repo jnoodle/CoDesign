@@ -12,7 +12,6 @@ import { useEffect, useState, useTransition } from 'react';
 import { totalsQuery, TotalStats } from '@/features/home';
 import {
   Banner,
-  ComingSoon,
   FilterRow,
   getSubskills,
   Introduction,
@@ -166,7 +165,7 @@ function TalentLeaderboard({
               isTotalLoading={isTotalsLoading}
             />
             <Introduction />
-            <ComingSoon />
+            {/*<ComingSoon />*/}
           </VStack>
         </Flex>
       </Box>

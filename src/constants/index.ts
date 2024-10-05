@@ -58,6 +58,7 @@ export const IndustryList = [
   'Wallets and Payments',
   'NFTs',
   'Gaming',
+  'Others',
 ];
 
 interface Token {
@@ -704,5 +705,5 @@ export const MAX_PODIUMS = 10;
 export const MAX_BONUS_SPOTS = 50;
 export const BONUS_REWARD_POSITION = 99;
 
-export const PDTG = 'https://t.me/pratikdholani/';
+export const PDTG = 'https://t.me/waynej/';
 export const ABTG = 'https://t.me/abhwshek/';

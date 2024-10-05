@@ -14,15 +14,12 @@ import {
 } from 'react';
 import type { IconType } from 'react-icons';
 import { BiListUl } from 'react-icons/bi';
-import { LuLock, LuMessageSquare, LuUsers } from 'react-icons/lu';
-import { MdList, MdOutlineChatBubbleOutline } from 'react-icons/md';
+import { LuLock } from 'react-icons/lu';
 import { RiUserSettingsLine } from 'react-icons/ri';
 
 import { EntityNameModal } from '@/components/modals/EntityNameModal';
-import { FeatureModal } from '@/components/modals/FeatureModal';
 import { LoadingSection } from '@/components/shared/LoadingSection';
 import { Tooltip } from '@/components/shared/responsive-tooltip';
-import { ABTG } from '@/constants';
 import { Superteams } from '@/constants/Superteam';
 import {
   isCreateListingAllowedQuery,
@@ -165,13 +162,13 @@ export function SponsorLayout({
 
   const LinkItems: Array<LinkItemProps> = isHackathonRoute
     ? [
-        { name: 'All Tracks', link: `/hackathon`, icon: MdList },
-        {
-          name: 'Get Help',
-          link: ABTG,
-          icon: MdOutlineChatBubbleOutline,
-          posthog: 'get help_sponsor',
-        },
+        // { name: 'All Tracks', link: `/hackathon`, icon: MdList },
+        // {
+        //   name: 'Get Help',
+        //   link: ABTG,
+        //   icon: MdOutlineChatBubbleOutline,
+        //   posthog: 'get help_sponsor',
+        // },
       ]
     : [
         { name: 'My Listings', link: '/listings', icon: BiListUl },
@@ -180,21 +177,21 @@ export function SponsorLayout({
           link: '/team-settings',
           icon: RiUserSettingsLine,
         },
-        ...(isLocalProfileVisible
-          ? [
-              {
-                name: 'Local Profiles',
-                link: '/local-profiles',
-                icon: LuUsers,
-              },
-            ]
-          : []),
-        {
-          name: 'Get Help',
-          link: ABTG,
-          icon: LuMessageSquare,
-          posthog: 'get help_sponsor',
-        },
+        // ...(isLocalProfileVisible
+        //   ? [
+        //       {
+        //         name: 'Local Profiles',
+        //         link: '/local-profiles',
+        //         icon: LuUsers,
+        //       },
+        //     ]
+        //   : []),
+        // {
+        //   name: 'Get Help',
+        //   link: ABTG,
+        //   icon: LuMessageSquare,
+        //   posthog: 'get help_sponsor',
+        // },
       ];
 
   const showLoading = !isHackathonRoute
@@ -216,10 +213,10 @@ export function SponsorLayout({
         />
       }
     >
-      <FeatureModal
-        isSponsorsRoute
-        forceOpen={user?.featureModalShown === false}
-      />
+      {/*<FeatureModal*/}
+      {/*  isSponsorsRoute*/}
+      {/*  forceOpen={user?.featureModalShown === false}*/}
+      {/*/>*/}
 
       <SponsorInfoModal
         onClose={sponsorInfoCloseAltered}

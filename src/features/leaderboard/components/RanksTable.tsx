@@ -57,7 +57,7 @@ export function RanksTable({ rankings, skill, userRank, loading }: Props) {
       border="1px solid #E2E8F0"
       borderRadius="md"
     >
-      <Table style={{ borderCollapse: 'collapse' }}>
+      <Table style={{ borderCollapse: 'collapse', position: 'relative' }}>
         <Thead>
           <Tr textTransform={'none'} bg="#F8FAFC">
             <Th

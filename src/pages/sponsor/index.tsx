@@ -3,17 +3,7 @@ import localFont from 'next/font/local';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 
-import {
-  FAQs,
-  Features,
-  Footer,
-  Header,
-  Hero,
-  ListingTypes,
-  ListingWork,
-  Stats,
-  Testimonials,
-} from '@/features/sponsor';
+import { Header, Hero } from '@/features/sponsor';
 import { Meta } from '@/layouts/Meta';
 
 const font = localFont({
@@ -77,7 +67,7 @@ const Sponsor = () => {
       <Flex
         className={`${font.className}`}
         overflow="hidden"
-        bg="white"
+        // bg="white"
         flexFlow="column"
         placeItems="center"
         style={font.style}
@@ -91,13 +81,13 @@ const Sponsor = () => {
           flexFlow="column"
         >
           <Hero />
-          <ListingTypes />
-          <Features showVideo={() => setVideoPopup(true)} />
-          <Stats />
-          <ListingWork />
-          <Testimonials />
-          <FAQs />
-          <Footer />
+          {/*<ListingTypes />*/}
+          {/*<Features showVideo={() => setVideoPopup(true)} />*/}
+          {/*<Stats />*/}
+          {/*<ListingWork />*/}
+          {/*<Testimonials />*/}
+          {/*<FAQs />*/}
+          {/*<Footer />*/}
         </Flex>
       </Flex>
     </>

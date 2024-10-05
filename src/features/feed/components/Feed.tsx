@@ -10,7 +10,6 @@ import {
   SubmissionCard,
   useGetFeed,
 } from '@/features/feed';
-import { VibeCard } from '@/features/home';
 import { Home } from '@/layouts/Home';
 
 import { GrantCard } from './grantCard';
@@ -142,14 +141,14 @@ export const Feed = ({ isWinner = false }: { isWinner?: boolean }) => {
               >
                 Activity Feed
               </Text>
-              <Box
-                display={{ base: 'none', md: 'flex', lg: 'none' }}
-                w="full"
-                pt={4}
-                pr={4}
-              >
-                <VibeCard />
-              </Box>
+              {/*<Box*/}
+              {/*  display={{ base: 'none', md: 'flex', lg: 'none' }}*/}
+              {/*  w="full"*/}
+              {/*  pt={4}*/}
+              {/*  pr={4}*/}
+              {/*>*/}
+              {/*  <VibeCard />*/}
+              {/*</Box>*/}
               <Flex
                 align={{ base: 'right', md: 'center' }}
                 justify={'space-between'}
@@ -162,14 +161,14 @@ export const Feed = ({ isWinner = false }: { isWinner?: boolean }) => {
                 >
                   Discover the best work on CoDesign
                 </Text>
-                <Box
-                  display={{ base: 'flex', md: 'none' }}
-                  w="full"
-                  pt={4}
-                  pr={4}
-                >
-                  <VibeCard />
-                </Box>
+                {/*<Box*/}
+                {/*  display={{ base: 'flex', md: 'none' }}*/}
+                {/*  w="full"*/}
+                {/*  pt={4}*/}
+                {/*  pr={4}*/}
+                {/*>*/}
+                {/*  <VibeCard />*/}
+                {/*</Box>*/}
                 <Flex
                   align="center"
                   justify={'space-between'}

@@ -83,7 +83,7 @@ export const DesktopNavbar = () => {
             </>
           </Link>
         </Flex>
-        <AbsoluteCenter>
+        <AbsoluteCenter hidden={true}>
           <Flex align="center" justify={'center'} flexGrow={1} h="full" ml={10}>
             <Stack direction={'row'} h="full" spacing={7}>
               {NAV_LINKS?.map((navItem) => {
@@ -136,7 +136,7 @@ export const DesktopNavbar = () => {
                   onClick={() => posthog.capture('create a listing_navbar')}
                 >
                   <Button
-                    color="#4F46E5"
+                    color={'brand.purple'}
                     fontWeight={600}
                     bg={'white'}
                     size="sm"
@@ -153,7 +153,7 @@ export const DesktopNavbar = () => {
                   onClick={() => posthog.capture('get started_sponsor navbar')}
                 >
                   <Button
-                    color="#4F46E5"
+                    color={'brand.purple'}
                     fontWeight={600}
                     bg={'white'}
                     size="sm"

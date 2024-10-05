@@ -207,6 +207,7 @@ export function Banner({
         borderWidth={'1px'}
         borderColor={'brand.slate.200'}
         borderRadius="md"
+        hidden={true}
       >
         <Link
           className="ph-no-capture"

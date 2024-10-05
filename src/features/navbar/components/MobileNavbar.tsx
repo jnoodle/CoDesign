@@ -127,7 +127,7 @@ export const MobileNavbar = ({ onLoginOpen }: Props) => {
                   router.push('/new');
                 }}
                 size="md"
-                variant="unstyled"
+                variant="outline"
               >
                 Complete your Profile
               </Button>
@@ -175,21 +175,21 @@ export const MobileNavbar = ({ onLoginOpen }: Props) => {
               label={'Leaderboard'}
               isActive={false}
             />
-            <Divider my={2} borderColor={'brand.slate.300'} />
-            <Link
-              as={NextLink}
-              alignItems="center"
-              display="flex"
-              pt={2}
-              href="/hackathon/radar"
-            >
-              <Image
-                h={6}
-                objectFit={'contain'}
-                alt="Radar Nav Icon"
-                src="/assets/hackathon/radar/nav.png"
-              />
-            </Link>
+            {/*<Divider my={2} borderColor={'brand.slate.300'} />*/}
+            {/*<Link*/}
+            {/*  as={NextLink}*/}
+            {/*  alignItems="center"*/}
+            {/*  display="flex"*/}
+            {/*  pt={2}*/}
+            {/*  href="/hackathon/radar"*/}
+            {/*>*/}
+            {/*  <Image*/}
+            {/*    h={6}*/}
+            {/*    objectFit={'contain'}*/}
+            {/*    alt="Radar Nav Icon"*/}
+            {/*    src="/assets/hackathon/radar/nav.png"*/}
+            {/*  />*/}
+            {/*</Link>*/}
           </DrawerBody>
         </DrawerContent>
       </Drawer>
@@ -198,7 +198,7 @@ export const MobileNavbar = ({ onLoginOpen }: Props) => {
 
   return (
     <>
-      {router.pathname === '/' && <AnnouncementBar />}
+      {/*{router.pathname === '/' && <AnnouncementBar />}*/}
       <Box pos="sticky" zIndex="sticky" top={0}>
         <Flex
           align="center"
