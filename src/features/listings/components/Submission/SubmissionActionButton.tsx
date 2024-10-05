@@ -8,7 +8,6 @@ import React, { useState } from 'react';
 import { LuPencil } from 'react-icons/lu';
 
 import { Tooltip } from '@/components/shared/responsive-tooltip';
-import { SurveyModal } from '@/components/shared/Survey';
 import { AuthWrapper } from '@/features/auth';
 import {
   getListingDraftStatus,
@@ -151,6 +150,7 @@ export const SubmissionActionButton = ({
     onClose: onSurveyClose,
   } = useDisclosure();
 
+  // TODO survey after submission
   const surveyId = '018c6743-c893-0000-a90e-f35d31c16692';
 
   return (
@@ -167,14 +167,14 @@ export const SubmissionActionButton = ({
           onSurveyOpen={onSurveyOpen}
         />
       )}
-      {isSurveyOpen &&
-        (!user?.surveysShown || !(surveyId in user.surveysShown)) && (
-          <SurveyModal
-            isOpen={isSurveyOpen}
-            onClose={onSurveyClose}
-            surveyId={surveyId}
-          />
-        )}
+      {/*{isSurveyOpen &&*/}
+      {/*  (!user?.surveysShown || !(surveyId in user.surveysShown)) && (*/}
+      {/*    <SurveyModal*/}
+      {/*      isOpen={isSurveyOpen}*/}
+      {/*      onClose={onSurveyClose}*/}
+      {/*      surveyId={surveyId}*/}
+      {/*    />*/}
+      {/*  )}*/}
       {isEasterEggOpen && (
         <EasterEgg
           isOpen={isEasterEggOpen}

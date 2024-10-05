@@ -28,7 +28,6 @@ import { SelectBox } from '@/components/Form/SelectBox';
 import { ImagePicker } from '@/components/shared/ImagePicker';
 import { SkillSelect } from '@/components/shared/SkillSelect';
 import {
-  CommunityList,
   CountryList,
   IndustryList,
   type MultiSelectOptions,
@@ -111,7 +110,8 @@ export default function EditProfilePage({ slug }: { slug: string }) {
     community: { label: string; value: string }[];
   }>({
     interests: user?.interests ? JSON.parse(user?.interests) : [],
-    community: user?.community ? JSON.parse(user.community) : [],
+    community: [],
+    // community: user?.community ? JSON.parse(user.community) : [],
   });
 
   const [skills, setSkills] = useState<MultiSelectOptions[]>([]);
@@ -141,18 +141,18 @@ export default function EditProfilePage({ slug }: { slug: string }) {
         }));
       }
 
-      if (user?.community) {
-        const communityArray: string[] = JSON.parse(user.community);
-        const communitySelectValues = communityArray.map((item) => ({
-          label: item,
-          value: item,
-        }));
-        setValue('community', communitySelectValues);
-        setDropDownValues((prev) => ({
-          ...prev,
-          community: communitySelectValues,
-        }));
-      }
+      // if (user?.community) {
+      //   const communityArray: string[] = JSON.parse(user.community);
+      //   const communitySelectValues = communityArray.map((item) => ({
+      //     label: item,
+      //     value: item,
+      //   }));
+      //   setValue('community', communitySelectValues);
+      //   setDropDownValues((prev) => ({
+      //     ...prev,
+      //     community: communitySelectValues,
+      //   }));
+      // }
 
       if (user.experience) {
         setValue('experience', user.experience);
@@ -230,8 +230,8 @@ export default function EditProfilePage({ slug }: { slug: string }) {
       const interestsArray = (data.interests || []).map((item) => item.value);
       const interestsJSON = JSON.stringify(interestsArray);
 
-      const communityArray = (data.community || []).map((item) => item.value);
-      const communityJSON = JSON.stringify(communityArray);
+      // const communityArray = (data.community || []).map((item) => item.value);
+      // const communityJSON = JSON.stringify(communityArray);
 
       const combinedSkills = skills.map((mainskill) => {
         const main =
@@ -256,7 +256,7 @@ export default function EditProfilePage({ slug }: { slug: string }) {
       const updatedData = {
         ...data,
         interests: interestsJSON,
-        community: communityJSON,
+        // community: communityJSON,
         skills: combinedSkills,
       };
 
@@ -486,38 +486,38 @@ export default function EditProfilePage({ slug }: { slug: string }) {
                   />
                 </Box>
 
-                <Box w={'full'} mb={'1.25rem'}>
-                  <FormLabel color={'brand.slate.500'}>
-                    Community Affiliations
-                  </FormLabel>
-                  <ReactSelect
-                    closeMenuOnSelect={false}
-                    components={animatedComponents}
-                    isMulti
-                    options={CommunityList.map((elm: string) => {
-                      return { label: elm, value: elm };
-                    })}
-                    value={DropDownValues.community}
-                    required
-                    onChange={(e: any) => {
-                      const selectedCommunities = e
-                        ? e.map((elm: { label: string; value: string }) => elm)
-                        : [];
-                      setDropDownValues({
-                        ...DropDownValues,
-                        community: selectedCommunities,
-                      });
-                      setValue('community', selectedCommunities);
-                    }}
-                    styles={{
-                      control: (baseStyles) => ({
-                        ...baseStyles,
-                        backgroundColor: 'brand.slate.500',
-                        borderColor: 'brand.slate.300',
-                      }),
-                    }}
-                  />
-                </Box>
+                {/*<Box w={'full'} mb={'1.25rem'}>*/}
+                {/*  <FormLabel color={'brand.slate.500'}>*/}
+                {/*    Community Affiliations*/}
+                {/*  </FormLabel>*/}
+                {/*  <ReactSelect*/}
+                {/*    closeMenuOnSelect={false}*/}
+                {/*    components={animatedComponents}*/}
+                {/*    isMulti*/}
+                {/*    options={CommunityList.map((elm: string) => {*/}
+                {/*      return { label: elm, value: elm };*/}
+                {/*    })}*/}
+                {/*    value={DropDownValues.community}*/}
+                {/*    // required*/}
+                {/*    onChange={(e: any) => {*/}
+                {/*      const selectedCommunities = e*/}
+                {/*        ? e.map((elm: { label: string; value: string }) => elm)*/}
+                {/*        : [];*/}
+                {/*      setDropDownValues({*/}
+                {/*        ...DropDownValues,*/}
+                {/*        community: selectedCommunities,*/}
+                {/*      });*/}
+                {/*      setValue('community', selectedCommunities);*/}
+                {/*    }}*/}
+                {/*    styles={{*/}
+                {/*      control: (baseStyles) => ({*/}
+                {/*        ...baseStyles,*/}
+                {/*        backgroundColor: 'brand.slate.500',*/}
+                {/*        borderColor: 'brand.slate.300',*/}
+                {/*      }),*/}
+                {/*    }}*/}
+                {/*  />*/}
+                {/*</Box>*/}
 
                 <SelectBox
                   label="Work Experience"

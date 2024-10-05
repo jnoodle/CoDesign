@@ -1,4 +1,4 @@
-import { Flex, Icon, type IconProps, Link } from '@chakra-ui/react';
+import { Flex, Icon, type IconProps, Link, Tooltip } from '@chakra-ui/react';
 import React from 'react';
 import { type IconType } from 'react-icons';
 import {
@@ -14,21 +14,31 @@ interface SocialHOCIconProps extends Omit<IconProps, 'as'> {
   link?: string;
   as?: IconType;
 }
-const SocialIcon = ({ link, as, ...props }: SocialHOCIconProps) => {
-  return (
-    <Link href={link} rel="noopener noreferrer" target="_blank">
-      <Flex>
-        <Icon
-          as={as}
-          opacity={link ? '1' : '0.3'}
-          cursor={link ? 'pointer' : 'auto'}
-          filter={link ? '' : 'grayscale(80%)'}
-          {...props}
-        />
-      </Flex>
-    </Link>
-  );
-};
+const SocialIcon = React.forwardRef(
+  ({ link, as, ...props }: SocialHOCIconProps, ref: any) => {
+    return (
+      <Link
+        ref={ref}
+        h={20}
+        href={link}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <Flex>
+          <Icon
+            as={as}
+            opacity={link ? '1' : '0.3'}
+            cursor={link ? 'pointer' : 'auto'}
+            filter={link ? '' : 'grayscale(80%)'}
+            {...props}
+          />
+        </Flex>
+      </Link>
+    );
+  },
+);
+
+SocialIcon.displayName = 'SocialIcon';
 
 interface SocialIconProps extends Omit<SocialHOCIconProps, 'as'> {
   link?: string;
@@ -50,9 +60,14 @@ const Website = ({ link, ...props }: SocialIconProps) => (
   <SocialIcon as={FaGlobe} link={link} {...props} />
 );
 
-const Discord = ({ link, ...props }: SocialIconProps) => (
-  <SocialIcon as={FaDiscord} link={link} {...props} />
-);
+const Discord = ({ link, ...props }: SocialIconProps) =>
+  link ? (
+    <Tooltip label={link} placement="top">
+      <SocialIcon as={FaDiscord} link="https://discord.com" {...props} />
+    </Tooltip>
+  ) : (
+    <SocialIcon as={FaDiscord} link={link} {...props} />
+  );
 
 const GitHub = ({ link, ...props }: SocialIconProps) => (
   <SocialIcon as={FaGithub} link={link} {...props} />

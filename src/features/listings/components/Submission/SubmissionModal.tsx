@@ -456,26 +456,20 @@ export const SubmissionModal = ({
 
               <TextInputWithHelper
                 id="publicKey"
-                label="Your Solana Wallet Address"
+                label="Your Blockchain Wallet Address"
                 helperText={
                   <>
-                    Add your Solana wallet address here. This is where you will
-                    receive your rewards if you win. Download{' '}
+                    Add your Blockchain wallet address (0x...) here. This is
+                    where you will receive your rewards if you win. Download{' '}
                     <Text as="u">
-                      <Link href="https://backpack.app" isExternal>
-                        Backpack
+                      <Link href="https://metamask.io/" isExternal>
+                        Metamask
                       </Link>
                     </Text>{' '}
-                    /{' '}
-                    <Text as="u">
-                      <Link href="https://solflare.com" isExternal>
-                        Solflare
-                      </Link>
-                    </Text>{' '}
-                    if you don&apos;t have a Solana wallet
+                    if you don&apos;t have a wallet.
                   </>
                 }
-                placeholder="Add your Solana wallet address"
+                placeholder="Add your Blockchain wallet address: 0x..."
                 register={register}
                 errors={errors}
                 validate={(address: string) =>

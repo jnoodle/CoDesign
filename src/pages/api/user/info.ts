@@ -20,6 +20,8 @@ export default async function getAllUsers(
         id: true,
         twitter: true,
         linkedin: true,
+        discord: true,
+        telegram: true,
         github: true,
         website: true,
         username: true,

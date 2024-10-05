@@ -33,10 +33,12 @@ import {
 } from '@/features/feed';
 import {
   AddProject,
+  Discord,
   EarnAvatar,
   GitHub,
   Linkedin,
   ShareProfile,
+  Telegram,
   Twitter,
   Website,
 } from '@/features/talent';
@@ -94,10 +96,13 @@ function TalentProfile({ talent, stats }: TalentProps) {
     setRandomIndex(Math.floor(Math.random() * bgImages.length));
   }, []);
 
+  console.log('talent', talent);
   const socialLinks = [
+    { Icon: Discord, link: talent?.discord },
     { Icon: Twitter, link: talent?.twitter },
     { Icon: Linkedin, link: talent?.linkedin },
     { Icon: GitHub, link: talent?.github },
+    { Icon: Telegram, link: talent?.telegram },
     { Icon: Website, link: talent?.website },
   ];
 

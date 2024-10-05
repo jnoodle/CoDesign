@@ -17,7 +17,6 @@ import ReactSelect from 'react-select';
 import makeAnimated from 'react-select/animated';
 
 import {
-  CommunityList,
   IndustryList,
   type MultiSelectOptions,
   web3Exp,
@@ -56,7 +55,7 @@ export function YourWork({ setStep, useFormStore }: Step1Props) {
       experience: form.experience,
       cryptoExperience: form.cryptoExperience,
       currentEmployer: form.currentEmployer,
-      community: form.community,
+      community: '', // form.community,
       workPrefernce: form.workPrefernce,
       isPrivate: form.isPrivate || false,
     },
@@ -67,8 +66,8 @@ export function YourWork({ setStep, useFormStore }: Step1Props) {
     if (
       skills.length === 0 ||
       subSkills.length === 0 ||
-      DropDownValues.interests.length === 0 ||
-      DropDownValues.community.length === 0
+      DropDownValues.interests.length === 0
+      // DropDownValues.community.length === 0
     ) {
       return false;
     }
@@ -201,43 +200,43 @@ export function YourWork({ setStep, useFormStore }: Step1Props) {
               maxLength={100}
             />
           </Box>
-          <Box w={'full'} mb={'1.25rem'}>
-            <FormLabel color={'brand.slate.500'}>
-              Community Affiliations
-            </FormLabel>
-            <ReactSelect
-              closeMenuOnSelect={false}
-              components={animatedComponents}
-              isMulti
-              options={CommunityList.map((elm: string) => {
-                return { label: elm, value: elm };
-              })}
-              required
-              onChange={(e: any) => {
-                setDropDownValues((st) => {
-                  return {
-                    ...st,
-                    community: JSON.stringify(
-                      e.map(
-                        (elm: { label: string; value: string }) => elm.value,
-                      ),
-                    ),
-                  };
-                });
-              }}
-              styles={{
-                control: (baseStyles) => ({
-                  ...baseStyles,
-                  border:
-                    DropDownValues.community.length === 0 && post
-                      ? '2px solid red'
-                      : baseStyles.border,
-                  backgroundColor: 'brand.slate.500',
-                  borderColor: 'brand.slate.300',
-                }),
-              }}
-            />
-          </Box>
+          {/*<Box w={'full'} mb={'1.25rem'}>*/}
+          {/*  <FormLabel color={'brand.slate.500'}>*/}
+          {/*    Community Affiliations*/}
+          {/*  </FormLabel>*/}
+          {/*  <ReactSelect*/}
+          {/*    closeMenuOnSelect={false}*/}
+          {/*    components={animatedComponents}*/}
+          {/*    isMulti*/}
+          {/*    options={CommunityList.map((elm: string) => {*/}
+          {/*      return { label: elm, value: elm };*/}
+          {/*    })}*/}
+          {/*    // required*/}
+          {/*    onChange={(e: any) => {*/}
+          {/*      setDropDownValues((st) => {*/}
+          {/*        return {*/}
+          {/*          ...st,*/}
+          {/*          community: JSON.stringify(*/}
+          {/*            e.map(*/}
+          {/*              (elm: { label: string; value: string }) => elm.value,*/}
+          {/*            ),*/}
+          {/*          ),*/}
+          {/*        };*/}
+          {/*      });*/}
+          {/*    }}*/}
+          {/*    styles={{*/}
+          {/*      control: (baseStyles) => ({*/}
+          {/*        ...baseStyles,*/}
+          {/*        border:*/}
+          {/*          DropDownValues.community.length === 0 && post*/}
+          {/*            ? '2px solid red'*/}
+          {/*            : baseStyles.border,*/}
+          {/*        backgroundColor: 'brand.slate.500',*/}
+          {/*        borderColor: 'brand.slate.300',*/}
+          {/*      }),*/}
+          {/*    }}*/}
+          {/*  />*/}
+          {/*</Box>*/}
           <Box w={'full'} mb={'1.25rem'}>
             <FormLabel color={'brand.slate.500'}>
               What areas of Web3 are you most interested in?

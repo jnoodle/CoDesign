@@ -1,6 +1,5 @@
 import { CloseIcon } from '@chakra-ui/icons';
 import {
-  AbsoluteCenter,
   Box,
   Container,
   Modal,
@@ -9,7 +8,6 @@ import {
   Text,
 } from '@chakra-ui/react';
 import Image from 'next/image';
-import Pride from 'react-canvas-confetti/dist/presets/pride';
 import { type TDecorateOptionsFn } from 'react-canvas-confetti/dist/types';
 
 interface Props {
@@ -61,10 +59,10 @@ export const EasterEgg = ({ isOpen, onClose, isProject }: Props) => {
         h="100vh"
         mt="0"
         mb="0"
-        bg="#5243FF"
+        bg={'brand.purple'}
         borderRadius={0}
       >
-        <Pride autorun={{ speed: 10 }} decorateOptions={decorateOptions} />
+        {/*<Pride autorun={{ speed: 10 }} decorateOptions={decorateOptions} />*/}
         <ModalCloseButton w={6} h={6} m={4} color="white">
           <CloseIcon width={4} height={4} />
         </ModalCloseButton>
@@ -86,45 +84,45 @@ export const EasterEgg = ({ isOpen, onClose, isProject }: Props) => {
           >
             {isProject ? 'Application' : 'Submission'} Received!
           </Text>
-          <Text
-            mt={[8, 5]}
-            color="white"
-            fontSize={[38, 48]}
-            lineHeight="1"
-            textAlign="center"
-            opacity="0.6"
-          >
-            Sending some vibes your way 💃 💃
-          </Text>
+          {/*<Text*/}
+          {/*  mt={[8, 5]}*/}
+          {/*  color="white"*/}
+          {/*  fontSize={[38, 48]}*/}
+          {/*  lineHeight="1"*/}
+          {/*  textAlign="center"*/}
+          {/*  opacity="0.6"*/}
+          {/*>*/}
+          {/*  Sending some vibes your way 💃 💃*/}
+          {/*</Text>*/}
         </Container>
-        <AbsoluteCenter
-          bottom="0"
-          alignItems="flex-end"
-          flexDir="column"
-          display="flex"
-          w={['150%', '100%', '100%', '50%']}
-          h="auto"
-          mx="auto"
-          mt="auto"
-          transform="translate(-50%,0%)"
-        >
-          <Image
-            src="/assets/memes/JohnCenaVibingToCupid.gif"
-            alt="John Cena Vibing to Cupid"
-            style={{ width: '100%', marginTop: 'auto', display: 'block' }}
-            width="500"
-            height="600"
-            priority
-            loading="eager"
-            quality={80}
-          />
-        </AbsoluteCenter>
-        <audio
-          src="/assets/memes/JohnCenaVibingToCupid.mp3"
-          style={{ display: 'none' }}
-          autoPlay
-          loop
-        />
+        {/*<AbsoluteCenter*/}
+        {/*  bottom="0"*/}
+        {/*  alignItems="flex-end"*/}
+        {/*  flexDir="column"*/}
+        {/*  display="flex"*/}
+        {/*  w={['150%', '100%', '100%', '50%']}*/}
+        {/*  h="auto"*/}
+        {/*  mx="auto"*/}
+        {/*  mt="auto"*/}
+        {/*  transform="translate(-50%,0%)"*/}
+        {/*>*/}
+        {/*  <Image*/}
+        {/*    src="/assets/memes/JohnCenaVibingToCupid.gif"*/}
+        {/*    alt="John Cena Vibing to Cupid"*/}
+        {/*    style={{ width: '100%', marginTop: 'auto', display: 'block' }}*/}
+        {/*    width="500"*/}
+        {/*    height="600"*/}
+        {/*    priority*/}
+        {/*    loading="eager"*/}
+        {/*    quality={80}*/}
+        {/*  />*/}
+        {/*</AbsoluteCenter>*/}
+        {/*<audio*/}
+        {/*  src="/assets/memes/JohnCenaVibingToCupid.mp3"*/}
+        {/*  style={{ display: 'none' }}*/}
+        {/*  autoPlay*/}
+        {/*  loop*/}
+        {/*/>*/}
       </ModalContent>
     </Modal>
   );
