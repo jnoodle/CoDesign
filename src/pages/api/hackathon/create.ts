@@ -1,4 +1,3 @@
-import { franc } from 'franc';
 import type { NextApiResponse } from 'next';
 
 import { type NextApiRequestWithUser, withAuth } from '@/features/auth';
@@ -70,11 +69,12 @@ async function handler(req: NextApiRequestWithUser, res: NextApiResponse) {
       ? hackathon.eligibility
       : null;
 
-    let language = '';
-    if (description) {
-      language = franc(description);
-      // both 'eng' and 'sco' are english listings
-    }
+    const language = 'eng';
+    // TODO remove franc
+    // if (description) {
+    //   language = franc(description);
+    //   // both 'eng' and 'sco' are english listings
+    // }
 
     let publishedAt;
     if (isPublished) {

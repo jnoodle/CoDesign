@@ -36,7 +36,6 @@ import { z } from 'zod';
 
 import { SkillSelect } from '@/components/shared/SkillSelect';
 import { type MultiSelectOptions } from '@/constants';
-import { CombinedRegions, Superteams } from '@/constants/Superteam';
 import { emailRegex, telegramRegex, twitterRegex } from '@/features/talent';
 import { dayjs } from '@/utils/dayjs';
 
@@ -173,7 +172,7 @@ export const ListingBasic = ({
       slug: form?.slug,
       skills: form?.skills,
       pocSocials: form?.pocSocials,
-      region: form?.region,
+      region: Regions.GLOBAL, // form?.region,
       applicationType: form?.applicationType,
       deadline: form?.deadline || undefined,
       timeToComplete: form?.timeToComplete,
@@ -198,7 +197,7 @@ export const ListingBasic = ({
           : undefined,
         skills: form?.skills,
         pocSocials: form?.pocSocials,
-        region: form?.region,
+        region: Regions.GLOBAL, // form?.region,
         applicationType: form?.applicationType || 'fixed',
         timeToComplete: form?.timeToComplete,
         referredBy: form?.referredBy,
@@ -465,26 +464,26 @@ export const ListingBasic = ({
             skills={skills}
             subSkills={subSkills}
           />
-          <FormControl w="full" mb={5} isInvalid={!!errors.region}>
-            <Flex>
-              <ListingFormLabel htmlFor="region">
-                Listing Geography
-              </ListingFormLabel>
-              <ListingTooltip label="Select the CoDesign region this listing will be available and relevant to. Only users from the region you specify will be able to apply/submit to this listing." />
-            </Flex>
-            <Select {...register('region')}>
-              <option value={Regions.GLOBAL}>Global</option>
-              {CombinedRegions.map((region) => (
-                <option value={region.region} key={region.displayValue}>
-                  {region.displayValue}
-                </option>
-              ))}
-            </Select>
+          {/*<FormControl w="full" mb={5} isInvalid={!!errors.region}>*/}
+          {/*  <Flex>*/}
+          {/*    <ListingFormLabel htmlFor="region">*/}
+          {/*      Listing Geography*/}
+          {/*    </ListingFormLabel>*/}
+          {/*    <ListingTooltip label="Select the CoDesign region this listing will be available and relevant to. Only users from the region you specify will be able to apply/submit to this listing." />*/}
+          {/*  </Flex>*/}
+          {/*  <Select {...register('region')}>*/}
+          {/*    <option value={Regions.GLOBAL}>Global</option>*/}
+          {/*    /!*{CombinedRegions.map((region) => (*!/*/}
+          {/*    /!*  <option value={region.region} key={region.displayValue}>*!/*/}
+          {/*    /!*    {region.displayValue}*!/*/}
+          {/*    /!*  </option>*!/*/}
+          {/*    /!*))}*!/*/}
+          {/*  </Select>*/}
 
-            <FormErrorMessage>
-              {errors.region ? <>{errors.region.message}</> : <></>}
-            </FormErrorMessage>
-          </FormControl>
+          {/*  <FormErrorMessage>*/}
+          {/*    {errors.region ? <>{errors.region.message}</> : <></>}*/}
+          {/*  </FormErrorMessage>*/}
+          {/*</FormControl>*/}
           <FormControl
             w="full"
             mb={5}
@@ -667,25 +666,25 @@ export const ListingBasic = ({
               </FormErrorMessage>
             </FormControl>
           )}
-          <FormControl w="full" mb={5} isInvalid={!!errors.referredBy}>
-            <Flex>
-              <ListingFormLabel htmlFor="referredBy">
-                Referred By
-              </ListingFormLabel>
-              <ListingTooltip label="Who referred you to add this listing on CoDesign?" />
-            </Flex>
+          {/*<FormControl w="full" mb={5} isInvalid={!!errors.referredBy}>*/}
+          {/*  <Flex>*/}
+          {/*    <ListingFormLabel htmlFor="referredBy">*/}
+          {/*      Referred By*/}
+          {/*    </ListingFormLabel>*/}
+          {/*    <ListingTooltip label="Who referred you to add this listing on CoDesign?" />*/}
+          {/*  </Flex>*/}
 
-            <Select {...register('referredBy')} placeholder="Select">
-              {Superteams.map((st) => (
-                <option value={st.name} key={st.name}>
-                  {st.name}
-                </option>
-              ))}
-            </Select>
-            <FormErrorMessage>
-              {errors.referredBy ? <>{errors.referredBy.message}</> : <></>}
-            </FormErrorMessage>
-          </FormControl>
+          {/*  <Select {...register('referredBy')} placeholder="Select">*/}
+          {/*    {Superteams.map((st) => (*/}
+          {/*      <option value={st.name} key={st.name}>*/}
+          {/*        {st.name}*/}
+          {/*      </option>*/}
+          {/*    ))}*/}
+          {/*  </Select>*/}
+          {/*  <FormErrorMessage>*/}
+          {/*    {errors.referredBy ? <>{errors.referredBy.message}</> : <></>}*/}
+          {/*  </FormErrorMessage>*/}
+          {/*</FormControl>*/}
           <FormControl alignItems="center" gap={3} display="flex">
             <Flex>
               <ListingFormLabel htmlFor="isPrivate">

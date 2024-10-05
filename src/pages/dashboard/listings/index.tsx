@@ -139,6 +139,7 @@ export default function SponsorListings() {
   const ALL_FILTERS = useMemo(() => {
     const filters = [
       'Draft',
+      'Under Verification',
       'In Progress',
       'In Review',
       'Payment Pending',

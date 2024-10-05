@@ -1,4 +1,3 @@
-import { franc } from 'franc';
 import type { NextApiResponse } from 'next';
 
 import {
@@ -57,13 +56,14 @@ async function handler(req: NextApiRequestWithSponsor, res: NextApiResponse) {
       publishedAt = new Date();
     }
 
-    let language = '';
-    if (description) {
-      language = franc(description);
-      // both 'eng' and 'sco' are english listings
-    } else {
-      language = 'eng';
-    }
+    const language = 'eng';
+    // TODO remove franc
+    // if (description) {
+    //   language = franc(description);
+    //   // both 'eng' and 'sco' are english listings
+    // } else {
+    //   language = 'eng';
+    // }
 
     const correctedSkills = cleanSkills(skills);
 
@@ -87,31 +87,33 @@ async function handler(req: NextApiRequestWithSponsor, res: NextApiResponse) {
     }
 
     // sponsor never had one live listing
-    let isVerifying = false;
-    if (isPublished) {
-      isVerifying =
-        (
-          await prisma.sponsors.findUnique({
-            where: {
-              id: userSponsorId,
-            },
-            select: {
-              isCaution: true,
-            },
-          })
-        )?.isCaution || false;
-      if (!isVerifying) {
-        isVerifying =
-          (await prisma.bounties.count({
-            where: {
-              sponsorId: userSponsorId,
-              isArchived: false,
-              isPublished: true,
-              isActive: true,
-            },
-          })) === 0;
-      }
-    }
+    const isVerifying = false;
+
+    // TODO disable is verifying status
+    // if (isPublished) {
+    //   isVerifying =
+    //     (
+    //       await prisma.sponsors.findUnique({
+    //         where: {
+    //           id: userSponsorId,
+    //         },
+    //         select: {
+    //           isCaution: true,
+    //         },
+    //       })
+    //     )?.isCaution || false;
+    //   if (!isVerifying) {
+    //     isVerifying =
+    //       (await prisma.bounties.count({
+    //         where: {
+    //           sponsorId: userSponsorId,
+    //           isArchived: false,
+    //           isPublished: true,
+    //           isActive: true,
+    //         },
+    //       })) === 0;
+    //   }
+    // }
 
     if (isVerifying) {
       isPublished = false;

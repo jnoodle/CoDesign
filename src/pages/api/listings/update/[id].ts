@@ -1,4 +1,3 @@
-import { franc } from 'franc';
 import type { NextApiResponse } from 'next';
 
 import { BONUS_REWARD_POSITION } from '@/constants';
@@ -93,13 +92,14 @@ async function bounty(req: NextApiRequestWithSponsor, res: NextApiResponse) {
       maxBonusSpots = 0;
     }
 
-    let language = '';
-    if (description) {
-      language = franc(description);
-      // both 'eng' and 'sco' are english listings
-    } else {
-      language = 'eng';
-    }
+    const language = 'eng';
+    // TODO remove franc
+    // if (description) {
+    //   language = franc(description);
+    //   // both 'eng' and 'sco' are english listings
+    // } else {
+    //   language = 'eng';
+    // }
 
     const skillsToUpdate =
       'skills' in updatedData ? (skills ? cleanSkills(skills) : []) : undefined;

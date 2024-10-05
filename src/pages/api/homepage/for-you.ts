@@ -67,8 +67,8 @@ export async function getForYouListings({ statusFilter, userId }: ForYouProps) {
       AND: [
         {
           OR: [
-            { compensationType: 'fixed', usdValue: { gt: 100 } },
-            { compensationType: 'range', maxRewardAsk: { gt: 100 } },
+            { compensationType: 'fixed', usdValue: { gte: 10 } },
+            { compensationType: 'range', maxRewardAsk: { gte: 10 } },
             { compensationType: 'variable' },
           ],
         },

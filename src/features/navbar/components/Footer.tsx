@@ -17,7 +17,6 @@ import React, { useEffect, useState } from 'react';
 
 import { UserFlag } from '@/components/shared/UserFlag';
 import { Superteams } from '@/constants/Superteam';
-import { Twitter } from '@/features/talent';
 
 type Country = {
   name: string;
@@ -169,7 +168,7 @@ export const Footer = () => {
     },
     { text: 'Contact Us', href: 'mailto:codesign.top@proton.me' },
     {
-      text: <Twitter link="https://x.com/CoDesignTop" />,
+      text: 'Twitter',
       href: 'https://x.com/CoDesignTop',
     },
   ];

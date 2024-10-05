@@ -51,8 +51,8 @@ export async function getListings({
       hackathonprize: false,
       isArchived: false,
       OR: [
-        { compensationType: 'fixed', usdValue: { gt: 100 } },
-        { compensationType: 'range', maxRewardAsk: { gt: 100 } },
+        { compensationType: 'fixed', usdValue: { gte: 10 } },
+        { compensationType: 'range', maxRewardAsk: { gte: 10 } },
         { compensationType: 'variable' },
       ],
       language: { in: ['eng', 'sco'] }, //cuz both eng and sco refer to listings in english

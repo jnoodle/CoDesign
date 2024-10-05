@@ -42,7 +42,7 @@ export function HomeBanner() {
     <Box
       pos="relative"
       w={'100%'}
-      h={{ base: '260', md: '280' }}
+      h={{ base: '220', md: '240' }}
       maxH={'500px'}
       mx={'auto'}
       my={3}
@@ -52,7 +52,7 @@ export function HomeBanner() {
       <Show above="sm">
         <Image
           src={DesktopBanner}
-          alt="Illustration — Two people working on laptops outdoors at night, surrounded by a mystical mountainous landscape illuminated by the moonlight"
+          alt="Start hunting for Bounties!"
           layout="fill"
           objectFit="cover"
           quality={95}
@@ -70,7 +70,7 @@ export function HomeBanner() {
       <Show below="sm">
         <Image
           src={MobileBanner}
-          alt="Illustration — Two people working on laptops outdoors at night, surrounded by a mystical mountainous landscape illuminated by the moonlight"
+          alt="Start hunting for Bounties!"
           layout="fill"
           objectFit="cover"
           quality={95}
@@ -92,8 +92,7 @@ export function HomeBanner() {
         fontWeight={'700'}
         lineHeight={'120%'}
       >
-        Find Your Next High
-        <br /> Paying Crypto Gig
+        Start hunting for Bounties!
       </Text>
       <Text
         pos="relative"
@@ -105,7 +104,7 @@ export function HomeBanner() {
         lineHeight={'130%'}
       >
         Participate in bounties or apply to freelance gigs of world-class crypto
-        companies, all with a single profile.
+        companies.
       </Text>
       <Flex
         zIndex={1}

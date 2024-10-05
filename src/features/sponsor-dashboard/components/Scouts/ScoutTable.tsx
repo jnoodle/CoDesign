@@ -158,48 +158,50 @@ export function ScoutTable({ bountyId, scouts, setInvited }: Props) {
           </Tr>
         </Thead>
         {scouts.length === 0 && (
-          <VStack
-            pos="absolute"
-            top={'12rem'}
-            left="50%"
-            gap={3}
-            mx="auto"
-            transform="translateX(-50%)"
-          >
-            <Center p={5} bg="brand.slate.100" rounded="full">
-              <svg
-                width="54"
-                height="54"
-                viewBox="0 0 54 54"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  opacity="0.3"
-                  x="9"
-                  y="11.25"
-                  width="36"
-                  height="13.5"
-                  rx="1.5"
-                  fill="#94A3B8"
-                />
-                <rect
-                  x="9"
-                  y="29.25"
-                  width="36"
-                  height="13.5"
-                  rx="1.5"
-                  fill="#94A3B8"
-                />
-              </svg>
-            </Center>
-            <VStack gap={0} fontSize="base" fontWeight={600}>
-              <Text>No Profiles Found</Text>
-              <Text color="brand.slate.500" fontWeight={400}>
-                We couldn’t find any suitable matches for your listing
-              </Text>
+          <Tbody color="brand.slate.500" fontSize="sm" fontWeight={500}>
+            <VStack
+              pos="absolute"
+              top={'12rem'}
+              left="50%"
+              gap={3}
+              mx="auto"
+              transform="translateX(-50%)"
+            >
+              <Center p={5} bg="brand.slate.100" rounded="full">
+                <svg
+                  width="54"
+                  height="54"
+                  viewBox="0 0 54 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    opacity="0.3"
+                    x="9"
+                    y="11.25"
+                    width="36"
+                    height="13.5"
+                    rx="1.5"
+                    fill="#94A3B8"
+                  />
+                  <rect
+                    x="9"
+                    y="29.25"
+                    width="36"
+                    height="13.5"
+                    rx="1.5"
+                    fill="#94A3B8"
+                  />
+                </svg>
+              </Center>
+              <VStack gap={0} fontSize="base" fontWeight={600}>
+                <Text>No Profiles Found</Text>
+                <Text color="brand.slate.500" fontWeight={400}>
+                  We couldn’t find any suitable matches for your listing
+                </Text>
+              </VStack>
             </VStack>
-          </VStack>
+          </Tbody>
         )}
         {scouts.length > 0 && (
           <Tbody color="brand.slate.500" fontSize="sm" fontWeight={500}>

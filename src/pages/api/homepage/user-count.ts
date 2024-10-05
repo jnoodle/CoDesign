@@ -16,7 +16,7 @@ export default async function handler(
       errorCount = 289;
     }
 
-    const roundedUserCount = Math.ceil((userCount - errorCount) / 10) * 10;
+    const roundedUserCount = Math.ceil((userCount - errorCount) / 10) * 100;
 
     logger.info('Successfully fetched user count', {
       totalUsers: roundedUserCount,

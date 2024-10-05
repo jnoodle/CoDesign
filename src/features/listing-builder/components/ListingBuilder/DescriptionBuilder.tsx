@@ -415,6 +415,7 @@ export const DescriptionBuilder = ({
               textDecoration: 'none',
               color: 'brand.slate.500',
             }}
+            hidden={true}
             href="https://chat.openai.com/g/g-HS6eWTMku-st-earn-listings-bot"
             onClick={() => {
               posthog.capture('chatGPT bot_sponsor');
