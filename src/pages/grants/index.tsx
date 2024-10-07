@@ -31,7 +31,7 @@ function Grants() {
         <Meta
           title="Grants | CoDesign"
           description="Discover Web3 Grants for Development, Art, Content, and more to fund your ideas"
-          canonical="https://earn.superteam.fun/grants/"
+          canonical="https://codesign.top/grants/"
           og={`${router.basePath}/assets/og/grants.png`}
         />
       }

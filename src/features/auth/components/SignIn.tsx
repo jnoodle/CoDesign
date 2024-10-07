@@ -5,7 +5,7 @@ import { signIn } from 'next-auth/react';
 import { usePostHog } from 'posthog-js/react';
 import React, { type Dispatch, type SetStateAction } from 'react';
 
-import { TERMS_OF_USE } from '@/constants';
+import { PRIVACY_POLICY, TERMS_OF_USE } from '@/constants';
 import { GoogleIcon } from '@/svg/google';
 
 import { EmailSignIn } from './EmailSignIn';
@@ -105,7 +105,7 @@ export const SignIn = ({ loginStep, setLoginStep }: SigninProps) => {
             <Link
               as={NextLink}
               fontWeight={600}
-              href={`${router.basePath}/privacy-policy.pdf`}
+              href={PRIVACY_POLICY}
               isExternal
             >
               Privacy Policy

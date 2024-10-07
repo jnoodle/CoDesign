@@ -279,7 +279,7 @@ export default function Talent() {
         <Meta
           title="Create Your Profile to Access Bounties & Projects | CoDesign"
           description="Become part of CoDesign's talent network, where you can present your skills and collaborate on various crypto bounties and projects."
-          canonical="https://earn.superteam.fun/new/talent/"
+          canonical="https://codesign.top/new/talent/"
         />
       }
     >

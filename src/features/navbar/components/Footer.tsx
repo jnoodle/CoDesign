@@ -16,6 +16,7 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 
 import { UserFlag } from '@/components/shared/UserFlag';
+import { PRIVACY_POLICY, TERMS_OF_USE } from '@/constants';
 import { Superteams } from '@/constants/Superteam';
 
 type Country = {
@@ -158,14 +159,14 @@ export const Footer = () => {
       href: 'https://superteamdao.notion.site/Superteam-Earn-FAQ-aedaa039b25741b1861167d68aa880b1?pvs=4',
     },
     {
-      text: 'Terms',
-      href: 'https://drive.google.com/file/d/1ybbO_UOTaIiyKb4Mbm3sNMbjTf5qj5mT/view',
+      text: 'Terms of Use',
+      href: TERMS_OF_USE,
     },
-    { text: 'Privacy Policy', href: '/privacy-policy.pdf' },
-    {
-      text: 'Changelog',
-      href: 'https://superteamdao.notion.site/Superteam-Earn-Changelog-faf0c85972a742699ecc07a52b569827',
-    },
+    { text: 'Privacy Policy', href: PRIVACY_POLICY },
+    // {
+    //   text: 'Changelog',
+    //   href: 'https://superteamdao.notion.site/Superteam-Earn-Changelog-faf0c85972a742699ecc07a52b569827',
+    // },
     { text: 'Contact Us', href: 'mailto:codesign.top@proton.me' },
     {
       text: 'Twitter',

@@ -61,8 +61,8 @@ const nextConfig = {
 const combinedConfig = withAxiom(withPWA(nextConfig));
 
 module.exports = withSentryConfig(combinedConfig, {
-  org: 'superteam-7o',
-  project: 'earn',
+  org: 'codesign-team',
+  project: 'codesign',
   silent: true,
   tunnelRoute: '/monitoring',
   hideSourceMaps: true,

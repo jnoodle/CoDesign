@@ -145,7 +145,7 @@ export default async function handler(request: NextRequest) {
                 objectFit: 'cover',
               }}
               alt="logo"
-              src={`https://earn.superteam.fun/assets/superteam-banners/${region}.png`}
+              src={`https://codesign.top/assets/superteam-banners/${region}.png`}
             />
           </div>
         </div>

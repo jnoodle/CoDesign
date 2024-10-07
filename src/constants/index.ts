@@ -706,7 +706,9 @@ export const workType = [
 export const MAX_COMMENT_SUGGESTIONS = 5;
 
 export const TERMS_OF_USE =
-  'https://drive.google.com/file/d/1ybbO_UOTaIiyKb4Mbm3sNMbjTf5qj5mT/view?usp=sharing';
+  'https://docs.google.com/document/d/e/2PACX-1vRwFIfTtt8Ibow356eOdHMaptIPTIsre4OabDDWC0Us8XzENzbcPb2lLcBx28HIW6-QEFKHOoMWADXp/pub';
+export const PRIVACY_POLICY =
+  'https://docs.google.com/document/d/e/2PACX-1vRDjN8M_Cf4Id7DQK7rFfNJt81PBxE5gQmIgwycB93NM0sOQm-aRr9HjKlrXlGmYCSG0akQxLvAULJb/pub';
 
 export const URL_REGEX = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i;
 

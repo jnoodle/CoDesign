@@ -114,7 +114,7 @@ ${listingLink('twitter')}
                     cursor="pointer"
                     onClick={onCopy}
                   >
-                    earn.superteam.fun/listings/{type}/{slug}
+                    codesign.top/listings/{type}/{slug}
                   </Text>
                   <Box mr="0rem">
                     {hasCopied ? (

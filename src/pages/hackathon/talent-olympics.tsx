@@ -203,7 +203,7 @@ export default function TalentOlympics({ countryLeaders, rankings }: Props) {
         <Meta
           title="Talent Olympics | CoDesign"
           description="Explore the latest bounties on CoDesign, offering opportunities in the crypto space across Design, Development, and Content."
-          canonical="https://earn.superteam.fun"
+          canonical="https://codesign.top"
         />
       }
     >

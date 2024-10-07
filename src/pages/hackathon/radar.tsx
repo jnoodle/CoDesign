@@ -85,7 +85,7 @@ export default function Radar() {
         <Meta
           title="Radar | CoDesign"
           description="Build a project for the latest Web3 global hackathon!"
-          canonical="https://earn.superteam.fun"
+          canonical="https://codesign.top"
           og={`${router.basePath}/assets/og/hackathon/${slug}.png`}
         />
       }

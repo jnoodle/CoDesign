@@ -45,7 +45,7 @@ export default async function handler(request: NextRequest) {
         <div
           style={{
             backgroundImage:
-              'url(https://earn.superteam.fun/assets/og/talent/bg.png)',
+              'url(https://codesign.top/assets/og/talent/bg.png)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',

@@ -13,8 +13,8 @@ export const WelcomeTalentTemplate = () => {
         I just wanted to say hey and let you know that I&apos;m a real person.
       </p>
       <p style={styles.text}>
-        I&apos;m Kash, and I&apos;m a Core Contributor over at{' '}
-        <a href="https://superteam.fun" style={styles.link}>
+        I&apos;m Wayne, and I&apos;m a Core Contributor over at{' '}
+        <a href="https://codesign.top" style={styles.link}>
           CoDesign
         </a>
         . I might not know you personally yet, but I&apos;m pumped that
@@ -33,7 +33,7 @@ export const WelcomeTalentTemplate = () => {
 
       <p style={styles.salutation}>
         Talk soon, <br />
-        Kash
+        Wayne
       </p>
     </div>
   );

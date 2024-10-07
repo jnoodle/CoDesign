@@ -67,7 +67,7 @@ function WinnerBounty({
         name="twitter:title"
         content={`${initialBounty?.title || 'Bounty'} | CoDesign`}
       />
-      <meta name="twitter:site" content="https://earn.superteam.fun" />
+      <meta name="twitter:site" content="https://codesign.top" />
       <meta name="twitter:creator" content="@CoDesignTop" />
       <meta name="twitter:image" content={`${image.toString()}`} />
       <meta name="twitter:card" content="summary_large_image" />

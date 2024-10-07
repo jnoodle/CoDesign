@@ -30,7 +30,7 @@ export default function AllRegionListingsPage({
       <Meta
         title={`Welcome to CoDesign ${displayName} | Discover Bounties and Projects`}
         description={`Welcome to CoDesign ${displayName}'s page — Discover bounties and projects and become a part of the global crypto community`}
-        canonical={`https://earn.superteam.fun/regions/${slug}/`}
+        canonical={`https://codesign.top/regions/${slug}/`}
         og={ogImage.toString()}
       />
       <Box w={'100%'}>

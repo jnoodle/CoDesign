@@ -24,7 +24,7 @@ import Select from 'react-select';
 import makeAnimated from 'react-select/animated';
 
 import { ImagePicker } from '@/components/shared/ImagePicker';
-import { ABTG, IndustryList } from '@/constants';
+import { IndustryList, PDTG } from '@/constants';
 import { SignIn } from '@/features/auth';
 import {
   useSlugValidation,
@@ -104,7 +104,7 @@ const CreateSponsor = () => {
         <Meta
           title="Create Sponsor | CoDesign"
           description="Every Web3 opportunity in one place!"
-          canonical="https://earn.superteam.fun/new/sponsor/"
+          canonical="https://codesign.top/new/sponsor/"
         />
       }
     >
@@ -462,8 +462,8 @@ const CreateSponsor = () => {
                   <Text align={'center'} color="yellow.500">
                     If you want access to the existing account, contact us on
                     Telegram at{' '}
-                    <Link href={ABTG} isExternal>
-                      @abhwshek
+                    <Link href={PDTG} isExternal>
+                      @waynej
                     </Link>
                   </Text>
                 )}

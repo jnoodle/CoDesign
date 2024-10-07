@@ -26,7 +26,7 @@ export default function ProjectsPage() {
       <Meta
         title="Apply to Projects in the Crypto Space | CoDesign"
         description="Discover unique crypto projects seeking talent. Apply on CoDesign and take your chance to work and earn in the crypto space."
-        canonical="https://earn.superteam.fun/projects/"
+        canonical="https://codesign.top/projects/"
       />
       <Box w={'100%'}>
         <ListingTabs

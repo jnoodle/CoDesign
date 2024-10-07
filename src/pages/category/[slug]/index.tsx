@@ -43,7 +43,7 @@ function ListingCategoryPage({ slug }: { slug: string }) {
     slug.charAt(0).toUpperCase() + slug.slice(1).toLowerCase();
 
   const metaDescription = `Find the latest ${slug.toLowerCase()} bounties and grants for freelancers and builders in the crypto space on CoDesign.`;
-  const canonicalURL = `https://earn.superteam.fun/category/${slug}/`;
+  const canonicalURL = `https://codesign.top/category/${slug}/`;
 
   return (
     <Home type="category">

@@ -41,11 +41,11 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   if (
     redirectToEarnSlugs.includes(slug as string) &&
-    !host.includes('earn.superteam.fun')
+    !host.includes('codesign.top')
   ) {
     return {
       redirect: {
-        destination: `https://earn.superteam.fun/listings/${type}/${slug}`,
+        destination: `https://codesign.top/listings/${type}/${slug}`,
         permanent: false,
       },
     };

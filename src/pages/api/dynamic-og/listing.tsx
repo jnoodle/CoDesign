@@ -150,7 +150,7 @@ export default async function handler(request: NextRequest) {
                     objectFit: 'contain',
                   }}
                   alt="logo"
-                  src={`https://earn.superteam.fun/assets/icons/${listingIcon}`}
+                  src={`https://codesign.top/assets/icons/${listingIcon}`}
                   width="64px"
                   height="64px"
                 />

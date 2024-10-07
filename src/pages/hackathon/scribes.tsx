@@ -23,7 +23,7 @@ export default function Scribes() {
         <Meta
           title="Web3 Scribes | CoDesign"
           description="Explore the latest bounties on CoDesign, offering opportunities in the crypto space across Design, Development, and Content."
-          canonical="https://earn.superteam.fun"
+          canonical="https://codesign.top"
         />
       }
     >
