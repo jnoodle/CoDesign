@@ -19,10 +19,10 @@ function AllCategoryListingsPage({ slug }: { slug: string }) {
   );
 
   const titlesForSlugs: { [key in SlugKeys]: string } = {
-    design: 'Design Bounties and Grants | CoDesign',
-    content: 'Content Bounties and Grants | CoDesign',
-    development: 'Development Bounties and Grants | CoDesign',
-    other: 'Other Bounties and Grants | CoDesign',
+    design: 'Design Bounties and Projects | CoDesign',
+    content: 'Content Bounties and Projects | CoDesign',
+    development: 'Development Bounties and Projects | CoDesign',
+    other: 'Other Bounties and Projects | CoDesign',
   };
   const titleKey = slug as SlugKeys;
   const title = titlesForSlugs[titleKey] || 'CoDesign';

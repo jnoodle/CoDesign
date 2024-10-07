@@ -94,8 +94,8 @@ export default function NewProfilePage({
       meta={
         <Meta
           title="Make Your Profile | Earn on CoDesign | Connect with Crypto Talent"
-          description="Join CoDesign to engage with top talent and discover bounties and grants for your crypto projects."
-          canonical="https://earn.superteam.fun/new/"
+          description="Join CoDesign to engage with top talent and discover crypto bounties and projects."
+          canonical="https://codesign.top/new/"
         />
       }
     >

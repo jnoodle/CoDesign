@@ -23,9 +23,9 @@ export default function BountiesPage() {
   return (
     <Home type="listing">
       <Meta
-        title="CoDesign | Discover Bounties and Grants in Crypto for Design, Development, and Content"
+        title="CoDesign | Discover Bounties and Projects in Crypto for Design, Development, and Content"
         description="Explore the latest bounties on CoDesign, offering opportunities in the crypto space across Design, Development, and Content."
-        canonical="https://earn.superteam.fun/bounties/"
+        canonical="https://codesign.top/bounties/"
       />
       <Box w={'100%'}>
         <ListingTabs

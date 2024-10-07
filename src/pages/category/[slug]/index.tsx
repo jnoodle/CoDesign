@@ -1,17 +1,10 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { useQuery } from '@tanstack/react-query';
 import type { NextPageContext } from 'next';
 import { useRouter } from 'next/router';
 import { useMemo } from 'react';
 
-import { EmptySection } from '@/components/shared/EmptySection';
-import { Loading } from '@/components/shared/Loading';
-import { GrantsCard, grantsQuery } from '@/features/grants';
-import {
-  ListingSection,
-  listingsQuery,
-  ListingTabs,
-} from '@/features/listings';
+import { listingsQuery, ListingTabs } from '@/features/listings';
 import { Home } from '@/layouts/Home';
 import { Meta } from '@/layouts/Meta';
 import { dayjs } from '@/utils/dayjs';
@@ -33,15 +26,15 @@ function ListingCategoryPage({ slug }: { slug: string }) {
     }),
   );
 
-  const { data: grants, isLoading: isGrantsLoading } = useQuery(
-    grantsQuery({ order: 'asc', take: 10 }),
-  );
+  // const { data: grants, isLoading: isGrantsLoading } = useQuery(
+  //   grantsQuery({ order: 'asc', take: 10 }),
+  // );
 
   const titlesForSlugs: { [key in SlugKeys]: string } = {
-    design: 'Design Bounties and Grants | CoDesign',
-    content: 'Content Bounties and Grants | CoDesign',
-    development: 'Development Bounties and Grants | CoDesign',
-    other: 'Other Bounties and Grants | CoDesign',
+    design: 'Design Bounties and Projects | CoDesign',
+    content: 'Content Bounties and Projects | CoDesign',
+    development: 'Development Bounties and Projects | CoDesign',
+    other: 'Other Bounties and Projects | CoDesign',
   };
 
   const titleKey = slug as SlugKeys;
@@ -70,29 +63,29 @@ function ListingCategoryPage({ slug }: { slug: string }) {
           showViewAll
           take={10}
         />
-        <ListingSection
-          type="grants"
-          title={`${formattedSlug} Grants`}
-          sub="Equity-free funding opportunities for builders"
-          emoji="/assets/home/emojis/grants.png"
-          showViewAll
-        >
-          {isGrantsLoading && (
-            <Flex align="center" justify="center" direction="column" minH={52}>
-              <Loading />
-            </Flex>
-          )}
-          {!isGrantsLoading && !grants?.length && (
-            <Flex align="center" justify="center" mt={8}>
-              <EmptySection
-                title="No grants available!"
-                message="Subscribe to notifications to get notified about new grants."
-              />
-            </Flex>
-          )}
-          {!isGrantsLoading &&
-            grants?.map((grant) => <GrantsCard grant={grant} key={grant.id} />)}
-        </ListingSection>
+        {/*<ListingSection*/}
+        {/*  type="grants"*/}
+        {/*  title={`${formattedSlug} Grants`}*/}
+        {/*  sub="Equity-free funding opportunities for builders"*/}
+        {/*  emoji="/assets/home/emojis/grants.png"*/}
+        {/*  showViewAll*/}
+        {/*>*/}
+        {/*  {isGrantsLoading && (*/}
+        {/*    <Flex align="center" justify="center" direction="column" minH={52}>*/}
+        {/*      <Loading />*/}
+        {/*    </Flex>*/}
+        {/*  )}*/}
+        {/*  {!isGrantsLoading && !grants?.length && (*/}
+        {/*    <Flex align="center" justify="center" mt={8}>*/}
+        {/*      <EmptySection*/}
+        {/*        title="No grants available!"*/}
+        {/*        message="Subscribe to notifications to get notified about new grants."*/}
+        {/*      />*/}
+        {/*    </Flex>*/}
+        {/*  )}*/}
+        {/*  {!isGrantsLoading &&*/}
+        {/*    grants?.map((grant) => <GrantsCard grant={grant} key={grant.id} />)}*/}
+        {/*</ListingSection>*/}
       </Box>
     </Home>
   );

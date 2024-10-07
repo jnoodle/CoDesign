@@ -14,7 +14,6 @@ import React, { useEffect } from 'react';
 
 import { useUser } from '@/store/user';
 import { fontMono, fontSans, fontSerif } from '@/theme/fonts';
-import { getURL } from '@/utils/validUrl';
 
 import theme from '../config/chakra.config';
 
@@ -49,8 +48,10 @@ const queryClient = new QueryClient();
 
 if (typeof window !== 'undefined') {
   posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {
-    api_host: `${getURL()}ingest`,
-    ui_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://app.posthog.com',
+    // api_host: `${getURL()}ingest`,
+    api_host:
+      process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
+    person_profiles: 'identified_only',
     loaded: (posthog) => {
       if (process.env.NODE_ENV === 'development') posthog.debug();
     },

@@ -4,7 +4,7 @@ import { emailRegex } from '@/features/talent';
 
 export const checkEmailValidity = async (email: string) => {
   try {
-    // CO: disable email validate
+    // TODO: disable zerobounce email validate
     // const { data } = await axios.post('/api/email/validate', { email });
     // return data.isValid;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

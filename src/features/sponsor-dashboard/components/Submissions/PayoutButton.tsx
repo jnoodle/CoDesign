@@ -404,7 +404,7 @@ export const PayoutButton = ({ bounty }: Props) => {
             </form>
             <Alert mt={2} mb={3} status="warning">
               <AlertIcon />
-              Ensure the transaction information is correct. Once saved, it
+              Make sure the transaction information is correct. Once saved, it
               cannot be modified.
             </Alert>
           </ModalBody>

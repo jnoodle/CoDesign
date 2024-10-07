@@ -188,12 +188,12 @@ export function CreateListing({
       } else {
         onSuccessOpen();
       }
-      if (
-        (!user?.surveysShown || !(surveyId in user.surveysShown)) &&
-        process.env.NEXT_PUBLIC_VERCEL_ENV === 'production'
-      ) {
-        onSurveyOpen();
-      }
+      // if (
+      //   (!user?.surveysShown || !(surveyId in user.surveysShown)) &&
+      //   process.env.NEXT_PUBLIC_VERCEL_ENV === 'production'
+      // ) {
+      //   onSurveyOpen();
+      // }
     } catch (e) {
       setIsListingPublishing(false);
     }

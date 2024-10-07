@@ -1,4 +1,4 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { Regions } from '@prisma/client';
 import { useQuery } from '@tanstack/react-query';
 import type { GetServerSideProps } from 'next';
@@ -9,10 +9,9 @@ import { useEffect, useState } from 'react';
 import { CombinedRegions } from '@/constants/Superteam';
 import {
   homepageForYouListingsQuery,
-  homepageGrantsQuery,
   homepageListingsQuery,
 } from '@/features/home';
-import { type Listing, ListingSection, ListingTabs } from '@/features/listings';
+import { type Listing, ListingTabs } from '@/features/listings';
 import { Home } from '@/layouts/Home';
 
 import { authOptions } from './api/auth/[...nextauth]';
@@ -34,10 +33,10 @@ const InstallPWAModal = dynamic(
   { ssr: false },
 );
 
-const GrantsCard = dynamic(
-  () => import('@/features/grants').then((mod) => mod.GrantsCard),
-  { ssr: false },
-);
+// const GrantsCard = dynamic(
+//   () => import('@/features/grants').then((mod) => mod.GrantsCard),
+//   { ssr: false },
+// );
 
 const EmptySection = dynamic(
   () =>
@@ -89,7 +88,7 @@ export default function HomePage({
     }),
   );
 
-  const { data: grants } = useQuery(homepageGrantsQuery(userRegion));
+  // const { data: grants } = useQuery(homepageGrantsQuery(userRegion));
 
   useEffect(() => {
     if (reviewListings && completeListings) {
@@ -125,26 +124,26 @@ export default function HomePage({
           take={20}
           showViewAll
         />
-        <ListingSection
-          type="grants"
-          title="Grants"
-          sub="Equity-free funding opportunities for builders"
-          emoji="/assets/home/emojis/grants.png"
-          showViewAll
-        >
-          {!grants?.length && (
-            <Flex align="center" justify="center" mt={8}>
-              <EmptySection
-                title="No grants available!"
-                message="Subscribe to notifications to get notified about new grants."
-              />
-            </Flex>
-          )}
-          {grants &&
-            grants?.map((grant) => {
-              return <GrantsCard grant={grant} key={grant.id} />;
-            })}
-        </ListingSection>
+        {/*<ListingSection*/}
+        {/*  type="grants"*/}
+        {/*  title="Grants"*/}
+        {/*  sub="Equity-free funding opportunities for builders"*/}
+        {/*  emoji="/assets/home/emojis/grants.png"*/}
+        {/*  showViewAll*/}
+        {/*>*/}
+        {/*  {!grants?.length && (*/}
+        {/*    <Flex align="center" justify="center" mt={8}>*/}
+        {/*      <EmptySection*/}
+        {/*        title="No grants available!"*/}
+        {/*        message="Subscribe to notifications to get notified about new grants."*/}
+        {/*      />*/}
+        {/*    </Flex>*/}
+        {/*  )}*/}
+        {/*  {grants &&*/}
+        {/*    grants?.map((grant) => {*/}
+        {/*      return <GrantsCard grant={grant} key={grant.id} />;*/}
+        {/*    })}*/}
+        {/*</ListingSection>*/}
       </Box>
     </Home>
   );

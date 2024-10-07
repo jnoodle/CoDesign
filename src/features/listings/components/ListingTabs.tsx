@@ -81,7 +81,9 @@ const generateTabContent = ({
             .filter(filterFunction)
             .sort(sortCompareFunction ? sortCompareFunction : () => 0)
             .slice(0, take ? take + 1 : undefined)
-            .map((bounty) => <ListingCard key={bounty.id} bounty={bounty} />)
+            .map((bounty, i) => (
+              <ListingCard key={bounty.id || i} bounty={bounty} />
+            ))
         ) : (
           <Flex align="center" justify="center" mt={8}>
             <EmptySection
