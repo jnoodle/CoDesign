@@ -24,7 +24,7 @@ async function wait(ms: number) {
 }
 
 export const config = {
-  maxDuration: 300,
+  maxDuration: 60,
 };
 
 async function handler(req: NextApiRequestWithSponsor, res: NextApiResponse) {
