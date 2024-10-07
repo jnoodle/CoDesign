@@ -7,12 +7,12 @@ export const config = {
   runtime: 'edge',
 };
 
-const mediumFontP = fetchAsset(
-  new URL('../../../../public/Inter-Medium.woff', import.meta.url),
-);
-const boldFontP = fetchAsset(
-  new URL('../../../../public/Inter-Bold.woff', import.meta.url),
-);
+// const mediumFontP = fetchAsset(
+//   new URL('../../../../public/Inter-Medium.woff', import.meta.url),
+// );
+// const boldFontP = fetchAsset(
+//   new URL('../../../../public/Inter-Bold.woff', import.meta.url),
+// );
 
 const logoP = fetchAsset(
   new URL('../../../../public/assets/logo/logo-grayed.png', import.meta.url),
@@ -22,11 +22,12 @@ export default async function handler(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
 
-    const [mediumFont, boldFont, logo] = await Promise.all([
-      mediumFontP,
-      boldFontP,
-      logoP,
-    ]);
+    // const [mediumFont, boldFont, logo] = await Promise.all([
+    //   mediumFontP,
+    //   boldFontP,
+    //   logoP,
+    // ]);
+    const [logo] = await Promise.all([logoP]);
 
     const getParam = (name: any, processFn = (x: any) => x) =>
       searchParams.has(name) ? processFn(searchParams.get(name)) : null;
@@ -35,8 +36,6 @@ export default async function handler(request: NextRequest) {
     const slug = getParam('slug', (x) => formatString(x, 28));
     const sponsorLogo = getParam('logo', (x) => formatString(x, 100));
 
-    return new ImageResponse(<div>CoDesign</div>, { width: 1200, height: 628 });
-    /*
     return new ImageResponse(
       (
         <div
@@ -89,16 +88,18 @@ export default async function handler(request: NextRequest) {
                 justifyContent: 'center',
               }}
             >
-              <img
-                style={{
-                  width: '120px',
-                  height: '120px',
-                  objectFit: 'contain',
-                  background: 'black',
-                }}
-                alt="logo"
-                src={sponsorLogo as string}
-              />
+              {sponsorLogo && (
+                <img
+                  style={{
+                    width: '120px',
+                    height: '120px',
+                    objectFit: 'contain',
+                    background: 'black',
+                  }}
+                  alt="logo"
+                  src={sponsorLogo as string}
+                />
+              )}
             </div>
             <div
               style={{
@@ -172,13 +173,12 @@ export default async function handler(request: NextRequest) {
       {
         width: 1200,
         height: 630,
-        fonts: [
-          { name: 'Medium', data: mediumFont, style: 'normal' },
-          { name: 'Bold', data: boldFont, style: 'normal' },
-        ],
+        // fonts: [
+        //   { name: 'Medium', data: mediumFont, style: 'normal' },
+        //   { name: 'Bold', data: boldFont, style: 'normal' },
+        // ],
       },
     );
-    */
   } catch (e: any) {
     console.log(`${e.message}`);
     return new Response(`Failed to generate the image`, {

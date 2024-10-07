@@ -44,7 +44,7 @@ const SponsorListingsPage = ({ slug, sponsor, title, description }: Props) => {
   const isVerified = sponsor.isVerified;
   const sSlug = sponsor.slug;
 
-  const ogImage = new URL(`${getURL()}api/dynamic-og/sponsor/`);
+  const ogImage = new URL(`${getURL()}api/dynamic-og/sponsorog/`);
   ogImage.searchParams.set('logo', logo || '');
   ogImage.searchParams.set('title', title || '');
   ogImage.searchParams.set('slug', sSlug || '');
