@@ -156,7 +156,7 @@ export const Footer = () => {
   const about = [
     {
       text: 'FAQ',
-      href: 'https://superteamdao.notion.site/Superteam-Earn-FAQ-aedaa039b25741b1861167d68aa880b1?pvs=4',
+      href: '/faq',
     },
     {
       text: 'Terms of Use',
