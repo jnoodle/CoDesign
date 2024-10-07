@@ -41,7 +41,7 @@ export const ListingSuccessModal = ({
   isVerified,
 }: Props) => {
   const listingLink = (medium?: 'twitter' | 'telegram') =>
-    `${getURL()}listings/${type}/${slug}/${medium ? `?utm_source=superteamearn&utm_medium=${medium}&utm_campaign=sharelisting` : ``}`;
+    `${getURL()}listings/${type}/${slug}/${medium ? `?utm_source=codesigntop&utm_medium=${medium}&utm_campaign=sharelisting` : ``}`;
 
   const tweetShareContent = `Check out my newly added @CoDesignTop opportunity!
 

@@ -16,6 +16,7 @@ interface SubmissionWithUser {
   winnerPosition?: keyof Rewards;
   isPaid: boolean;
   paymentDetails?: {
+    chainExplorerUrl?: string;
     txId?: string;
   };
   rewardInUSD: number;

@@ -13,7 +13,14 @@ import { useUser } from '@/store/user';
 import { getURL } from '@/utils/validUrl';
 
 import { EarnAvatar } from './EarnAvatar';
-import { GitHub, Linkedin, Twitter, Website } from './Socials';
+import {
+  Discord,
+  GitHub,
+  Linkedin,
+  Telegram,
+  Twitter,
+  Website,
+} from './Socials';
 
 type ChipType = {
   icon: string;
@@ -78,9 +85,11 @@ export function TalentBio({
     router.push(`/t/${talentUser?.username}/edit`);
   };
   const socialLinks = [
+    { Component: Discord, link: talentUser?.discord },
     { Component: Twitter, link: talentUser?.twitter },
     { Component: Linkedin, link: talentUser?.linkedin },
     { Component: GitHub, link: talentUser?.github },
+    { Component: Telegram, link: talentUser?.telegram },
     { Component: Website, link: talentUser?.website },
   ];
 

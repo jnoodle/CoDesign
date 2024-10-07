@@ -94,7 +94,7 @@ export function PublishResults({
     if (!isWinnersAnnounced || bounty?.isWinnersAnnounced) return;
     const timer = setTimeout(() => {
       window.location.reload();
-    }, 1500);
+    }, 3000);
     return () => clearTimeout(timer);
   }, [isWinnersAnnounced]);
 
@@ -140,7 +140,9 @@ export function PublishResults({
                 Publishing the results of this listing will make the results
                 public for everyone to see!
                 <br />
-                YOU CAN&apos;T GO BACK ONCE YOU PUBLISH THE RESULTS!
+                <Text as="b" color="red">
+                  YOU CAN&apos;T GO BACK ONCE YOU PUBLISH THE RESULTS!
+                </Text>
               </Text>
             )}
           {!isWinnersAnnounced && alertTitle && alertDescription && (

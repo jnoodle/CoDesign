@@ -82,7 +82,7 @@ export const SubmissionHeader = ({
       : `${getURL()}listings/${bounty?.type}/${bounty?.slug}/`;
 
   const socialListingLink = (medium?: 'twitter' | 'telegram') =>
-    `${listingLink}${medium ? `?utm_source=superteamearn&utm_medium=${medium}&utm_campaign=sharelisting/` : ``}`;
+    `${listingLink}${medium ? `?utm_source=codesigntop&utm_medium=${medium}&utm_campaign=sharelisting/` : ``}`;
 
   const tweetShareContent = `Check out my newly added @CoDesignTop opportunity!
 

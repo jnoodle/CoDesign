@@ -138,7 +138,9 @@ export const SubmissionPanel = ({
                         mr={4}
                         onClick={() => {
                           window.open(
-                            `https://solscan.io/tx/${selectedSubmission?.paymentDetails?.txId}?cluster=${process.env.NEXT_PUBLIC_PAYMENT_CLUSTER}`,
+                            selectedSubmission?.paymentDetails
+                              ?.chainExplorerUrl ||
+                              `https://etherscan.io/tx/${selectedSubmission?.paymentDetails?.txId}?cluster=${process.env.NEXT_PUBLIC_PAYMENT_CLUSTER}`,
                             '_blank',
                           );
                         }}
