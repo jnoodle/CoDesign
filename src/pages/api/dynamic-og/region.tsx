@@ -26,6 +26,8 @@ export default async function handler(request: NextRequest) {
     const code = getParam('code');
     const hasCode = code && code !== 'undefined';
 
+    return new ImageResponse(<div>CoDesign</div>, { width: 1200, height: 628 });
+    /*
     return new ImageResponse(
       (
         <div
@@ -156,6 +158,8 @@ export default async function handler(request: NextRequest) {
         fonts: [{ name: 'Bold', data: boldFont, style: 'normal' }],
       },
     );
+
+       */
   } catch (e: any) {
     console.log(`${e.message}`);
     return new Response(`Failed to generate the image`, {

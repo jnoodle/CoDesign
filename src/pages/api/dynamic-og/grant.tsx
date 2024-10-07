@@ -58,6 +58,8 @@ export default async function handler(request: NextRequest) {
 
     const icon = getTokenIcon(token);
 
+    return new ImageResponse(<div>CoDesign</div>, { width: 1200, height: 628 });
+    /*
     return new ImageResponse(
       (
         <div
@@ -263,6 +265,7 @@ export default async function handler(request: NextRequest) {
         ],
       },
     );
+    */
   } catch (e: any) {
     console.log(`${e.message}`);
     return new Response(`Failed to generate the image`, {
