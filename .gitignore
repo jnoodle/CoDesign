@@ -72,3 +72,6 @@ local
 .env.sentry-build-plugin
 !/.env.develop
 .env.develop
+!/.env.product
+.env.product
+.env.product
