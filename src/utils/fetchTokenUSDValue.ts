@@ -1,9 +1,6 @@
 import axios from 'axios';
 import dayjs from 'dayjs';
 
-import { tokenList } from '@/constants';
-import logger from '@/lib/logger';
-
 const CG_BASE_URL = 'https://api.coingecko.com/api/v3';
 const STABLE_COINS = ['USDT', 'USDC'];
 
@@ -24,22 +21,23 @@ async function getCurrentPrice(coingeckoSymbol: string) {
 }
 
 export async function fetchTokenUSDValue(token: string, date?: Date) {
-  try {
-    if (STABLE_COINS.includes(token)) {
-      return 1;
-    }
-
-    const tokenEntry = tokenList.find((t) => t.tokenSymbol === token);
-    if (!tokenEntry?.coingeckoSymbol) {
-      throw new Error(`No CoinGecko symbol found for token: ${token}`);
-    }
-
-    const { coingeckoSymbol } = tokenEntry;
-    return date
-      ? await getHistoricalPrice(coingeckoSymbol, date)
-      : await getCurrentPrice(coingeckoSymbol);
-  } catch (error) {
-    logger.error('Error fetching token value from CoinGecko:', error);
-    return 1;
-  }
+  return 1; // TODO only usd token
+  // try {
+  //   if (STABLE_COINS.includes(token)) {
+  //     return 1;
+  //   }
+  //
+  //   const tokenEntry = tokenList.find((t) => t.tokenSymbol === token);
+  //   if (!tokenEntry?.coingeckoSymbol) {
+  //     throw new Error(`No CoinGecko symbol found for token: ${token}`);
+  //   }
+  //
+  //   const { coingeckoSymbol } = tokenEntry;
+  //   return date
+  //     ? await getHistoricalPrice(coingeckoSymbol, date)
+  //     : await getCurrentPrice(coingeckoSymbol);
+  // } catch (error) {
+  //   logger.error('Error fetching token value from CoinGecko:', error);
+  //   return 1;
+  // }
 }

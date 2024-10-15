@@ -58,6 +58,7 @@ export function Home({ children, type, st, isAuth }: HomeProps) {
           title="CoDesign | Work to CoDesign in Crypto"
           description="Explore the latest bounties on CoDesign, offering opportunities in the crypto space across Design, Development, and Content."
           canonical="https://codesign.top"
+          og={`${router.basePath}/assets/og/og.png`}
         />
       }
     >

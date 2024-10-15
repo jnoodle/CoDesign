@@ -87,33 +87,33 @@ async function handler(req: NextApiRequestWithSponsor, res: NextApiResponse) {
     }
 
     // sponsor never had one live listing
-    const isVerifying = false;
+    let isVerifying = false;
 
-    // TODO disable is verifying status
-    // if (isPublished) {
-    //   isVerifying =
-    //     (
-    //       await prisma.sponsors.findUnique({
-    //         where: {
-    //           id: userSponsorId,
-    //         },
-    //         select: {
-    //           isCaution: true,
-    //         },
-    //       })
-    //     )?.isCaution || false;
-    //   if (!isVerifying) {
-    //     isVerifying =
-    //       (await prisma.bounties.count({
-    //         where: {
-    //           sponsorId: userSponsorId,
-    //           isArchived: false,
-    //           isPublished: true,
-    //           isActive: true,
-    //         },
-    //       })) === 0;
-    //   }
-    // }
+    if (isPublished) {
+      isVerifying =
+        (
+          await prisma.sponsors.findUnique({
+            where: {
+              id: userSponsorId,
+            },
+            select: {
+              isCaution: true,
+            },
+          })
+        )?.isCaution || false;
+      // TODO disable is verifying status
+      // if (!isVerifying) {
+      //   isVerifying =
+      //     (await prisma.bounties.count({
+      //       where: {
+      //         sponsorId: userSponsorId,
+      //         isArchived: false,
+      //         isPublished: true,
+      //         isActive: true,
+      //       },
+      //     })) === 0;
+      // }
+    }
 
     if (isVerifying) {
       isPublished = false;
